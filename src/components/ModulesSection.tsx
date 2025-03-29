@@ -47,7 +47,7 @@ const modules = [
   },
   {
     number: 4,
-    title: "A Fórmula "Forever 50"",
+    title: 'A Fórmula "Forever 50"',
     description: "Trabalhe menos e cresça mais rápido",
     icon: TrendingUp,
     highlights: [

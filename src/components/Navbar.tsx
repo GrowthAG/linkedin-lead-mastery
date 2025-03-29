@@ -24,7 +24,11 @@ const Navbar = () => {
             <Clock className="h-4 w-4 mr-1 animate-pulse" />
             <span>Últimas vagas!</span>
           </div>
-          <Button variant="default" className="bg-linkedin-primary hover:bg-linkedin-dark">
+          <Button 
+            variant="default" 
+            className="bg-linkedin-primary hover:bg-linkedin-dark"
+            onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+          >
             Inscreva-se agora
           </Button>
         </div>

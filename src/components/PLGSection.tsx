@@ -34,7 +34,10 @@ const PLGSection = () => {
               ))}
             </ul>
             
-            <Button className="w-full bg-linkedin-primary hover:bg-linkedin-dark">
+            <Button 
+              className="w-full bg-linkedin-primary hover:bg-linkedin-dark"
+              onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+            >
               Quero Testar o Módulo 1 Grátis
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

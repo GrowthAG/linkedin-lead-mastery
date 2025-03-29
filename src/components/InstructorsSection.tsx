@@ -3,6 +3,7 @@ import React from 'react';
 import { Trophy, Award, Landmark, Users, Linkedin, Star } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const instructors = [
   {
@@ -144,11 +145,18 @@ const InstructorsSection = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
             Desenvolvemos este método após anos testando centenas de abordagens diferentes. 
             <span className="font-bold"> Não é baseado em teorias, mas em dados reais e experiência prática 
             com mais de 2.500 profissionais que transformaram seus perfis de invisíveis para referências em seus nichos.</span>
           </p>
+          
+          <Button 
+            className="cta-button"
+            onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+          >
+            Quero Aprender com os Especialistas
+          </Button>
         </div>
       </div>
     </section>

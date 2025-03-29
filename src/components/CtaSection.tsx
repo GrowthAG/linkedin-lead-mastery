@@ -33,7 +33,10 @@ const CtaSection = () => {
           </div>
         </div>
         
-        <Button className="cta-button text-lg mb-6 animate-pulse-glow">
+        <Button 
+          className="cta-button text-lg mb-6 animate-pulse-glow"
+          onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+        >
           Quero Transformar Meu LinkedIn Agora
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>

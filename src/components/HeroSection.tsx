@@ -28,12 +28,22 @@ const HeroSection = () => {
             </div>
             
             <div className="py-4 space-y-4 md:space-y-0 md:space-x-4 md:flex">
-              <Button className="cta-button w-full md:w-auto animate-pulse-glow">
+              <Button 
+                className="cta-button w-full md:w-auto animate-pulse-glow"
+                onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+              >
                 Garantir Minha Vaga Agora
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
-              <Button variant="outline" className="w-full md:w-auto border-linkedin-primary text-linkedin-primary hover:bg-linkedin-primary/10">
+              <Button 
+                variant="outline" 
+                className="w-full md:w-auto border-linkedin-primary text-linkedin-primary hover:bg-linkedin-primary/10"
+                onClick={() => {
+                  const element = document.getElementById('testimonials');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Ver depoimentos
               </Button>
             </div>

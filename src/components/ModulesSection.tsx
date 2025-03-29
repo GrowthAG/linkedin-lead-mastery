@@ -155,7 +155,10 @@ const ModulesSection = () => {
             ))}
           </div>
           
-          <Button className="cta-button">
+          <Button 
+            className="cta-button"
+            onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+          >
             Quero Acesso ao Treinamento Completo
           </Button>
         </div>

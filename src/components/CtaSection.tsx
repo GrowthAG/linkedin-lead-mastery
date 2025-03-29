@@ -7,8 +7,10 @@ const CtaSection = () => {
   return (
     <section className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
-          Chegou a hora de transformar seu LinkedIn em uma máquina de vendas
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center leading-tight">
+          <span className="block">Chegou a hora de transformar</span>
+          <span className="block">seu LinkedIn em uma</span>
+          <span className="block">máquina de vendas</span>
         </h2>
         
         <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto text-center">

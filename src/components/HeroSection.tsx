@@ -18,9 +18,9 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#005f95] leading-tight">
-              O segredo dos 3% que dominam <br className="hidden md:block" />
-              o LinkedIn e fecham negócios <br className="hidden md:block" />
-              enquanto você continua invisível
+              <span className="font-bold block">O segredo dos 3%</span>
+              <span className="font-bold block">que dominam o LinkedIn</span>
+              <span className="font-bold block">enquanto você segue invisível</span>
             </h1>
             
             <p className={`${isMobile ? 'text-lg' : 'text-xl md:text-2xl'} text-gray-700`}>

@@ -8,6 +8,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FaqSection from '@/components/FaqSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
+import InstructorsSection from '@/components/InstructorsSection';
 
 // Links para materiais do treinamento
 const trainingMaterials = {
@@ -21,10 +22,11 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <BenefitsSection />
+      <InstructorsSection />
       <ModulesSection />
       <TestimonialsSection />
       <FaqSection />
-      <CtaSection materials={trainingMaterials} />
+      <CtaSection />
       <Footer />
     </div>
   );

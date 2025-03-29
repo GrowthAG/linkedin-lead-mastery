@@ -17,7 +17,7 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#005f95] leading-tight">
-              Pare de perder negócios no LinkedIn: o método testado que transformou +2.500 profissionais em máquinas de vendas
+              Destaque-se no LinkedIn: o método que já transformou +2.500 profissionais em máquinas de vendas
             </h1>
             
             <p className={`${isMobile ? 'text-lg' : 'text-xl md:text-2xl'} text-gray-700`}>

@@ -82,15 +82,19 @@
   }
 
   h1 {
-    @apply text-4xl md:text-5xl;
+    @apply text-3xl md:text-4xl lg:text-5xl;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl;
+    @apply text-2xl md:text-3xl lg:text-4xl;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl;
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+  
+  p {
+    @apply text-sm md:text-base;
   }
 }
 
@@ -100,10 +104,54 @@
   }
   
   .cta-button {
-    @apply bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-8 py-3 rounded-md font-semibold transform transition-transform hover:scale-105 hover:shadow-lg;
+    @apply bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-md font-semibold transform transition-transform hover:scale-105 hover:shadow-lg;
   }
 
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .responsive-container {
+    @apply px-4 md:px-8 py-6 md:py-12 max-w-7xl mx-auto;
+  }
+  
+  .responsive-text {
+    @apply text-sm md:text-base lg:text-lg;
+  }
+  
+  .responsive-heading {
+    @apply text-xl md:text-2xl lg:text-3xl font-bold;
+  }
+}
+
+/* Adicionando animações para elementos importantes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Melhoria na animação do pulse-glow para mobile */
+@media (max-width: 768px) {
+  @keyframes pulse-glow-mobile {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.92;
+      transform: scale(1.03);
+    }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow-mobile 2s ease-in-out infinite;
   }
 }

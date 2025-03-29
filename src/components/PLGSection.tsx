@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BarChart2, Zap, TrendingUp, CheckCircle, Users, Shield } from 'lucide-react';
+import { ArrowRight, BarChart2, Zap, TrendingUp, CheckCircle, Users, Shield, Star } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const PLGSection = () => {
@@ -11,16 +11,23 @@ const PLGSection = () => {
     <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="gradient-text mb-4 text-2xl md:text-3xl lg:text-4xl">
-            Resultados comprovados para quem investe no método
+          <div className="flex items-center justify-center mb-4">
+            <div className="bg-[#1EAEDB]/10 px-4 py-1 rounded-full text-[#1EAEDB] text-sm font-semibold inline-flex items-center">
+              <Star className="mr-1.5 h-4 w-4" />
+              RESULTADOS COMPROVADOS
+            </div>
+          </div>
+          
+          <h2 className="gradient-text mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">
+            Invista no método que já transformou<br className="hidden md:block" /> mais de 2.500 perfis no LinkedIn
           </h2>
           <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-            Nosso treinamento é exclusivo para quem realmente deseja resultados. Investimento com retorno garantido.
+            Nosso treinamento é exclusivo para profissionais determinados a alcançar resultados reais e mensuráveis.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
-          <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg transform transition-all duration-300 hover:translate-y-[-5px] h-full">
+          <div className="bg-white p-6 md:p-8 rounded-xl shadow-md border-2 border-[#1EAEDB] h-full transform transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl">
             <h3 className="text-xl md:text-2xl font-bold mb-4 text-linkedin-primary">Acesso Premium ao Treinamento Completo</h3>
             
             <ul className="space-y-3 mb-6">
@@ -37,13 +44,26 @@ const PLGSection = () => {
               ))}
             </ul>
             
+            <div className="bg-gray-50 p-4 rounded-lg mb-6 border border-gray-100">
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-gray-500 line-through text-sm">R$1.997</span>
+                <span className="bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded text-xs font-bold">50% OFF</span>
+              </div>
+              <div className="text-2xl font-bold text-linkedin-primary">R$997</div>
+              <div className="text-sm text-gray-500">ou 12x de R$97</div>
+            </div>
+            
             <Button 
-              className="w-full bg-linkedin-primary hover:bg-linkedin-dark text-base md:text-sm"
+              className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
               onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
             >
-              Quero Garantir Meu Acesso Agora
+              Garantir Meu Acesso Agora
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+            
+            <p className="text-xs text-center text-gray-500 mt-3">
+              Garantia de 30 dias • Acesso imediato • Suporte por 12 meses
+            </p>
           </div>
           
           <div className="space-y-6 h-full flex flex-col justify-center">
@@ -89,11 +109,22 @@ const PLGSection = () => {
           </div>
         </div>
         
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-lg max-w-4xl mx-auto">
-          <p className="text-blue-800 italic mb-4 text-sm md:text-base">
-            "Investi no LinkedIn Hackers Academy há 3 meses e já recuperei meu investimento 8x. Meu perfil é agora uma máquina de geração de leads qualificados."
-          </p>
-          <p className="font-semibold text-blue-900 text-sm md:text-base">— Ricardo M., Consultor de Marketing</p>
+        <div className="bg-white border-l-4 border-blue-500 p-4 md:p-6 rounded-lg max-w-4xl mx-auto shadow-sm">
+          <div className="flex items-start md:items-center">
+            <div className="mr-4 flex-shrink-0">
+              <img 
+                src="https://i.pravatar.cc/60?img=8" 
+                alt="Cliente satisfeito" 
+                className="w-12 h-12 rounded-full border-2 border-blue-100"
+              />
+            </div>
+            <div>
+              <p className="text-blue-800 italic mb-2 text-sm md:text-base">
+                "Investi no LinkedIn Hackers Academy há 3 meses e já recuperei meu investimento 8x. Meu perfil é agora uma máquina de geração de leads qualificados, sem precisar fazer mais prospecção ativa."
+              </p>
+              <p className="font-semibold text-blue-900 text-sm md:text-base">— Ricardo M., Consultor de Marketing</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

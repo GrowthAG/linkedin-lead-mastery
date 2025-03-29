@@ -1,11 +1,11 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, ShieldCheck, Clock } from 'lucide-react';
+import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift } from 'lucide-react';
 
 const CtaSection = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-r from-linkedin-primary to-linkedin-dark text-white">
+    <section className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
           Chegou a hora de transformar seu LinkedIn em uma máquina de vendas
@@ -17,14 +17,16 @@ const CtaSection = () => {
         
         <div className="flex flex-col md:flex-row gap-8 mb-12">
           <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl md:w-2/3">
-            <h3 className="text-2xl font-bold mb-6 text-yellow-300">O que você recebe hoje:</h3>
+            <h3 className="text-2xl font-bold mb-6 text-yellow-300 flex items-center">
+              <Gift className="mr-2 h-6 w-6" /> O que você recebe hoje:
+            </h3>
             <div className="grid gap-4 text-left">
               {[
                 "Acesso vitalício ao treinamento completo com 7 módulos",
-                "Todos os bônus exclusivos (valor de R$1.997)",
+                "Todos os 9 bônus exclusivos (valor de R$1.997)",
                 "Comunidade exclusiva de suporte por 12 meses",
                 "Atualizações gratuitas para sempre",
-                "Templates prontos para hooks e posts",
+                "Templates prontos para hooks, posts e carrosséis",
                 "Auditoria personalizada do seu perfil (20 primeiros inscritos)",
                 "Plano de ação de 90 dias personalizado",
                 "Garantia de resultados de 30 dias"
@@ -37,7 +39,7 @@ const CtaSection = () => {
             </div>
           </div>
           
-          <div className="md:w-1/3 bg-white rounded-xl p-6 text-linkedin-primary flex flex-col justify-center">
+          <div className="md:w-1/3 bg-white rounded-xl p-6 text-[#005f95] flex flex-col justify-center">
             <div className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-bold inline-block mb-3 self-start">
               OFERTA POR TEMPO LIMITADO
             </div>

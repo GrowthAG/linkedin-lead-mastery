@@ -7,7 +7,16 @@ import {
   TrendingUp, 
   MessageSquare, 
   BarChart, 
-  Zap 
+  Zap,
+  Gift,
+  CheckCircle,
+  FileText,
+  Monitor,
+  Calendar,
+  Users,
+  Target,
+  Award,
+  Clipboard
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
@@ -139,27 +148,97 @@ const ModulesSection = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
-          <h3 className="text-2xl font-bold mb-4">+ Bônus Especiais</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
-            {[
-              "Swipe File com 90 Hooks Virais",
-              "200+ Palavras-Poder para Hooks",
-              "Templates de Carrossel no Canva",
-              "Checklist do Post Perfeito",
-              "Plano de Ação de 30 Dias"
-            ].map((bonus, idx) => (
-              <div key={idx} className="bg-yellow-50 border border-yellow-200 p-4 rounded">
-                <p className="font-semibold text-yellow-800">{bonus}</p>
+        <div className="mt-20 text-center">
+          <div className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-6 py-2 rounded-full text-xl font-bold mb-8">
+            <Gift className="inline-block mr-2 h-5 w-5" /> + Bônus Especiais (Valor: R$1.997)
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-2 border-yellow-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-yellow-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <FileText className="h-6 w-6" />
               </div>
-            ))}
+              <h4 className="text-yellow-800 font-bold text-lg mb-2">Swipe File com 90 Hooks Virais</h4>
+              <p className="text-yellow-700 text-sm">Copie e adapte hooks que geraram milhões de visualizações em diferentes nichos</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-blue-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Edit className="h-6 w-6" />
+              </div>
+              <h4 className="text-blue-800 font-bold text-lg mb-2">200+ Palavras-Poder para Hooks</h4>
+              <p className="text-blue-700 text-sm">Lista exclusiva de palavras e frases que geram cliques instantâneos nos seus posts</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border-2 border-purple-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-purple-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Monitor className="h-6 w-6" />
+              </div>
+              <h4 className="text-purple-800 font-bold text-lg mb-2">Templates de Carrossel no Canva</h4>
+              <p className="text-purple-700 text-sm">10 templates profissionais prontos para personalizar e publicar imediatamente</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-green-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="h-6 w-6" />
+              </div>
+              <h4 className="text-green-800 font-bold text-lg mb-2">Checklist do Post Perfeito</h4>
+              <p className="text-green-700 text-sm">Guia passo a passo para garantir que cada post que você criar tenha máximo impacto</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-red-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Calendar className="h-6 w-6" />
+              </div>
+              <h4 className="text-red-800 font-bold text-lg mb-2">Plano de Ação de 30 Dias</h4>
+              <p className="text-red-700 text-sm">Roteiro diário do que fazer nos primeiros 30 dias para maximizar resultados rápidos</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 border-2 border-indigo-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-indigo-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-6 w-6" />
+              </div>
+              <h4 className="text-indigo-800 font-bold text-lg mb-2">Comunidade VIP 12 Meses</h4>
+              <p className="text-indigo-700 text-sm">Acesso exclusivo à nossa comunidade privada com suporte direto dos mentores</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 border-2 border-pink-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-pink-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Target className="h-6 w-6" />
+              </div>
+              <h4 className="text-pink-800 font-bold text-lg mb-2">Auditoria Personalizada do Perfil</h4>
+              <p className="text-pink-700 text-sm">Análise detalhada do seu perfil com recomendações específicas (20 primeiros inscritos)</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 border-2 border-orange-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-orange-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Award className="h-6 w-6" />
+              </div>
+              <h4 className="text-orange-800 font-bold text-lg mb-2">Certificado de Especialista</h4>
+              <p className="text-orange-700 text-sm">Certificado digital que valida suas habilidades avançadas em LinkedIn para seu currículo</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-teal-50 to-teal-100 border-2 border-teal-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+              <div className="bg-teal-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                <Clipboard className="h-6 w-6" />
+              </div>
+              <h4 className="text-teal-800 font-bold text-lg mb-2">Scripts de Mensagens para DM</h4>
+              <p className="text-teal-700 text-sm">25 scripts prontos para iniciar conversas que convertem conexões em clientes</p>
+            </div>
+          </div>
+          
+          <div className="bg-yellow-50 border-2 border-yellow-300 p-6 rounded-xl max-w-3xl mx-auto mb-10">
+            <h4 className="text-xl font-bold text-yellow-800 mb-3">ATENÇÃO: Bônus por tempo limitado!</h4>
+            <p className="text-yellow-700 mb-4">
+              Estes bônus exclusivos (valor total de R$1.997) estão disponíveis apenas para as próximas 24 horas ou até atingirmos o limite de vagas.
+            </p>
           </div>
           
           <Button 
-            className="cta-button"
+            className="cta-button text-lg"
             onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
           >
-            Quero Acesso ao Treinamento Completo
+            Quero Acesso ao Treinamento + Todos os Bônus
           </Button>
         </div>
       </div>

@@ -1,6 +1,9 @@
 
 import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const faqs = [
   {
@@ -34,6 +37,14 @@ const faqs = [
   {
     question: "Qual a diferença entre este método e outros treinamentos de LinkedIn?",
     answer: "A maioria dos treinamentos se baseia em teorias genéricas. Nosso método foi desenvolvido a partir de testes reais com mais de 2.500 profissionais e é continuamente atualizado com base no algoritmo atual do LinkedIn. Além disso, oferecemos garantia baseada em resultados, não apenas satisfação."
+  },
+  {
+    question: "É possível cancelar a minha inscrição?",
+    answer: "Sim. Oferecemos garantia de 30 dias. Se você não ficar satisfeito com o conteúdo ou não conseguir implementar as estratégias, pode solicitar o cancelamento e reembolso total dentro desse período."
+  },
+  {
+    question: "O que está incluído no treinamento?",
+    answer: "O treinamento inclui acesso a todos os módulos, materiais complementares, templates, comunidade exclusiva, sessões de perguntas e respostas ao vivo, e todos os bônus especiais."
   }
 ];
 
@@ -41,18 +52,22 @@ const FaqSection = () => {
   return (
     <section id="faq" className="py-16 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="gradient-text mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-linkedin-primary to-linkedin-dark bg-clip-text text-transparent">
             Perguntas Frequentes
           </h2>
           <p className="text-xl text-gray-600">
-            Tire suas dúvidas sobre o LinkedIn Hackers
+            Tire suas dúvidas sobre o LinkedIn Hackers Academy
           </p>
         </div>
         
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem value={`item-${index}`} key={index} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white">
+            <AccordionItem 
+              value={`item-${index}`} 
+              key={index} 
+              className="border border-gray-200 rounded-lg overflow-hidden shadow-sm bg-white hover:shadow-md transition-shadow duration-300"
+            >
               <AccordionTrigger className="px-6 py-4 hover:bg-gray-50 text-left font-semibold">
                 {faq.question}
               </AccordionTrigger>
@@ -63,13 +78,36 @@ const FaqSection = () => {
           ))}
         </Accordion>
         
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 mb-4">
-            Ainda com dúvidas? Entre em contato conosco:
+        <div className="mt-12 p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="mb-4 md:mb-0">
+              <h3 className="text-xl font-semibold mb-2">Ainda tem dúvidas?</h3>
+              <p className="text-gray-600">
+                Envie suas perguntas diretamente para nossa equipe de suporte:
+              </p>
+            </div>
+            <Button 
+              variant="outline" 
+              className="border-linkedin-primary text-linkedin-primary hover:bg-linkedin-primary hover:text-white"
+              onClick={() => window.location.href = 'mailto:contato@revhackers.academy'}
+            >
+              <Mail className="h-4 w-4 mr-2" />
+              contato@revhackers.academy
+            </Button>
+          </div>
+        </div>
+        
+        <div className="mt-8 text-center">
+          <p className="text-gray-500 text-sm">
+            Para mais informações, consulte nossos{" "}
+            <Link to="/termos-de-uso" className="text-linkedin-primary hover:underline">
+              Termos de Uso
+            </Link>{" "}
+            e{" "}
+            <Link to="/politica-de-privacidade" className="text-linkedin-primary hover:underline">
+              Política de Privacidade
+            </Link>
           </p>
-          <a href="mailto:suporte@revhackers.academy" className="text-linkedin-primary font-medium hover:underline">
-            suporte@revhackers.academy
-          </a>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { LinkedinIcon, Mail, Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
               O treinamento mais completo para transformar seu LinkedIn em uma máquina de oportunidades.
             </p>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-linkedin-secondary hover:text-white transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-linkedin-secondary hover:text-white transition-colors">
                 <LinkedinIcon className="h-5 w-5" />
               </a>
               <a href="mailto:contato@revhackers.academy" className="text-linkedin-secondary hover:text-white transition-colors">
@@ -33,16 +34,25 @@ const Footer = () => {
                 { name: "Benefícios", href: "#benefits" },
                 { name: "Depoimentos", href: "#testimonials" },
                 { name: "FAQ", href: "#faq" },
-                { name: "Política de Privacidade", href: "#" },
-                { name: "Termos de Uso", href: "#" }
+                { name: "Política de Privacidade", href: "/politica-de-privacidade" },
+                { name: "Termos de Uso", href: "/termos-de-uso" }
               ].map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
-                    className="hover:text-linkedin-secondary transition-colors"
-                  >
-                    {link.name}
-                  </a>
+                  {link.href.startsWith("#") ? (
+                    <a 
+                      href={link.href} 
+                      className="hover:text-linkedin-secondary transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link 
+                      to={link.href} 
+                      className="hover:text-linkedin-secondary transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

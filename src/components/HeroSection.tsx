@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, Users, Trophy, Timer } from 'lucide-react';
+import { ArrowRight, Clock, Users, Trophy, Timer, ShieldCheck } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -10,21 +10,26 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-3/5 space-y-6 mb-10 lg:mb-0">
             <div className="inline-block bg-red-50 text-red-600 px-4 py-1 rounded-full text-sm font-semibold mb-2 animate-pulse">
-              <Clock className="inline-block w-4 h-4 mr-1" /> Vagas limitadas: últimas 15 disponíveis
+              <Clock className="inline-block w-4 h-4 mr-1" /> Vagas limitadas: últimas 10 disponíveis
             </div>
             
             <h1 className="text-[#005f95] leading-tight">
-              Pare de perder negócios no LinkedIn: estratégias que os 3% de sucesso não compartilham
+              Pare de perder negócios no LinkedIn: o método testado que transformou +2.500 profissionais em máquinas de vendas
             </h1>
             
             <p className="text-xl text-gray-700 md:text-2xl">
-              <strong className="text-linkedin-primary">97% dos profissionais</strong> desperdiçam seu potencial no LinkedIn por não conhecerem as estratégias que realmente funcionam. Junte-se aos <strong className="text-linkedin-primary">3% que dominam</strong> esta plataforma.
+              <strong className="text-linkedin-primary">97% dos profissionais</strong> desperdiçam seu potencial no LinkedIn com estratégias obsoletas. Junte-se aos <strong className="text-linkedin-primary">3% que dominam</strong> esta plataforma e transformam conexões em contratos.
             </p>
             
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6">
               <p className="font-medium">
-                "Estou rejeitando conexões porque não consigo atender tanta demanda depois do treinamento" - <span className="italic">João M. aluno do LinkedIn Hackers</span>
+                "Depois de aplicar o método por apenas 3 semanas, fechei 2 contratos que pagaram o investimento mais de 10x" - <span className="italic">Marcela R., Consultora Financeira</span>
               </p>
+            </div>
+            
+            <div className="flex items-center gap-2 text-sm bg-green-50 p-3 rounded-lg my-4 border border-green-200">
+              <ShieldCheck className="text-green-600 h-5 w-5 flex-shrink-0" />
+              <p><span className="font-bold">Garantia de Resultado:</span> Se em 30 dias você não tiver pelo menos 3x mais visualizações, devolvemos 100% do seu investimento.</p>
             </div>
             
             <div className="py-4 space-y-4 md:space-y-0 md:space-x-4 md:flex">
@@ -103,7 +108,7 @@ const HeroSection = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9z" clipRule="evenodd" />
                   </svg>
-                  <span className="font-bold">BÔNUS LIMITADO:</span> Primeiros 20 inscritos recebem consultoria individual de 30min
+                  <span className="font-bold">BÔNUS LIMITADO:</span> Primeiros 20 inscritos recebem auditoria personalizada do seu perfil + plano de 90 dias
                 </p>
               </div>
             </div>

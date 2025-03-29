@@ -1,37 +1,47 @@
 
 import React from 'react';
-import { Shield, Clock, BrainCircuit, DollarSign, Target, Heart } from 'lucide-react';
+import { Shield, Clock, BrainCircuit, DollarSign, Target, Heart, PieChart, Award } from 'lucide-react';
 
 const objections = [
   {
+    title: "Já tentei outras estratégias sem resultado",
+    response: "Nosso método é baseado em DADOS REAIS de +2.500 profissionais, não em teorias. Trabalhamos com o algoritmo ATUAL do LinkedIn, garantindo resultados em até 14 dias, mesmo para quem já tentou outras abordagens.",
+    icon: BrainCircuit
+  },
+  {
     title: "Não tenho tempo para criar conteúdo",
-    response: "Com nosso método 80/20, você precisará de apenas 2-3 horas por semana para criar conteúdo de alto impacto. Nossas ferramentas de automação reduzem o tempo gasto em 70%.",
+    response: "Nosso método 80/20 exige apenas 2-3 horas por semana. Fornecemos templates prontos e um sistema de automação que reduz em 70% o tempo para criar conteúdo de alto impacto.",
     icon: Clock
   },
   {
     title: "Meu nicho é muito técnico/conservador",
-    response: "Temos dezenas de alunos de áreas como direito, engenharia e finanças que estão crescendo exponencialmente. Nosso método se adapta a qualquer nicho, mantendo sua credibilidade.",
+    response: "Temos dezenas de casos de sucesso em áreas como direito, engenharia, medicina e finanças. Nossa estratégia preserva sua credibilidade enquanto aumenta drasticamente sua visibilidade.",
     icon: Target
   },
   {
-    title: "Já tentei outras estratégias sem sucesso",
-    response: "Diferente de outras abordagens, nosso método é baseado em dados e testes reais com mais de 2.500 profissionais. Trabalhamos com o algoritmo atual do LinkedIn, não com teorias obsoletas.",
-    icon: BrainCircuit
-  },
-  {
-    title: "O investimento é muito alto para mim agora",
-    response: "Considere quanto vale um novo cliente para seu negócio. Muitos alunos recuperam o investimento com apenas 1-2 novos clientes, frequentemente na primeira semana após a implementação.",
+    title: "O investimento parece alto para mim agora",
+    response: "Um único cliente de alto valor paga o investimento muitas vezes. A maioria dos alunos recupera o investimento em menos de 30 dias, com ROI médio de 500% no primeiro trimestre.",
     icon: DollarSign
   },
   {
-    title: "E se eu não conseguir os resultados prometidos?",
-    response: "Oferecemos garantia de satisfação de 30 dias. Se você implementar as estratégias e não ver melhoria significativa, devolvemos 100% do seu investimento sem questionamentos.",
+    title: "E se eu não conseguir os resultados?",
+    response: "Oferecemos garantia de 30 dias baseada em RESULTADOS REAIS. Se você implementar as estratégias e não ver aumento significativo em métricas, devolvemos 100% do seu investimento.",
     icon: Shield
   },
   {
-    title: "Não tenho experiência suficiente no LinkedIn",
-    response: "Nosso método foi desenvolvido tanto para iniciantes quanto para usuários avançados. Mais de 40% dos nossos alunos começaram do zero, e hoje têm perfis de alto impacto.",
+    title: "Não sou especialista em marketing digital",
+    response: "Nosso método foi desenvolvido para qualquer pessoa, independente do seu conhecimento em marketing. 67% dos nossos melhores casos são de pessoas que nunca tinham criado conteúdo antes.",
     icon: Heart
+  },
+  {
+    title: "Não tenho muitos seguidores ainda",
+    response: "Isso é perfeito! Você evitará erros comuns. Alunos que começaram do zero conseguiram resultados até mais rápido por aplicarem a estratégia correta desde o início.",
+    icon: PieChart
+  },
+  {
+    title: "Já sou muito ocupado com meu trabalho",
+    response: "Justamente por isso nosso método é otimizado para profissionais ocupados. Com apenas 30 minutos por dia, você consegue implementar as estratégias e ver resultados consistentes.",
+    icon: Award
   },
 ];
 
@@ -48,11 +58,11 @@ const ObjectionsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {objections.map((objection, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg"
+              className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               <div className="flex items-center mb-4">
                 <div className="bg-linkedin-primary/10 p-2 rounded-full mr-3">
@@ -66,27 +76,51 @@ const ObjectionsSection = () => {
           ))}
         </div>
         
-        <div className="mt-12 bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
-          <h3 className="text-xl font-bold mb-4 text-center">O que está realmente em jogo?</h3>
+        <div className="mt-12 bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto border-2 border-linkedin-primary/10">
+          <h3 className="text-xl font-bold mb-6 text-center text-linkedin-primary">O que está REALMENTE em jogo aqui?</h3>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="border-l-4 border-red-500 pl-4">
-              <h4 className="font-semibold mb-2">Se você não agir agora:</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Continuar invisível enquanto concorrentes crescem</li>
-                <li>• Perder oportunidades valiosas de networking</li>
-                <li>• Investir tempo em estratégias ineficientes</li>
-                <li>• Deixar dinheiro na mesa enquanto outros capturam leads</li>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="border-l-4 border-red-500 pl-4 p-4 bg-red-50/50 rounded-r-lg">
+              <h4 className="font-bold mb-3 text-gray-800">Se você continuar fazendo o mesmo:</h4>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-red-500 font-bold mr-2">•</span>
+                  <span>Perder oportunidades de negócio para concorrentes menos qualificados que você</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 font-bold mr-2">•</span>
+                  <span>Continuar investindo tempo em estratégias que não geram retorno concreto</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 font-bold mr-2">•</span>
+                  <span>Permanecer invisível enquanto outros em seu mercado se destacam</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 font-bold mr-2">•</span>
+                  <span>Precisar fazer prospecção ativa constantemente para conseguir clientes</span>
+                </li>
               </ul>
             </div>
             
-            <div className="border-l-4 border-green-500 pl-4">
-              <h4 className="font-semibold mb-2">Ao implementar o método:</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Tornar-se referência em seu nicho</li>
-                <li>• Atrair oportunidades sem precisar prospectar</li>
-                <li>• Construir autoridade que se converte em negócios</li>
-                <li>• Criar uma máquina de leads que trabalha 24/7</li>
+            <div className="border-l-4 border-green-500 pl-4 p-4 bg-green-50/50 rounded-r-lg">
+              <h4 className="font-bold mb-3 text-gray-800">Ao implementar o método:</h4>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-green-500 font-bold mr-2">•</span>
+                  <span>Tornar-se uma referência respeitada em seu mercado em 60-90 dias</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 font-bold mr-2">•</span>
+                  <span>Atrair clientes de alto valor que chegam pré-vendidos para trabalhar com você</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 font-bold mr-2">•</span>
+                  <span>Construir um ativo digital que gera leads qualificados 24 horas por dia</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 font-bold mr-2">•</span>
+                  <span>Estabelecer seu posicionamento premium e aumentar seus preços com base em sua autoridade</span>
+                </li>
               </ul>
             </div>
           </div>

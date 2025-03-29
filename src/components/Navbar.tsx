@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { LinkedinIcon } from 'lucide-react';
+import { LinkedinIcon, Clock } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -19,9 +19,15 @@ const Navbar = () => {
           <a href="#faq" className="text-gray-600 hover:text-linkedin-primary transition-colors">FAQ</a>
         </div>
         
-        <Button variant="default" className="bg-linkedin-primary hover:bg-linkedin-dark">
-          Inscreva-se
-        </Button>
+        <div className="flex items-center space-x-2">
+          <div className="hidden md:flex items-center text-red-600 text-sm mr-2">
+            <Clock className="h-4 w-4 mr-1 animate-pulse" />
+            <span>Últimas vagas!</span>
+          </div>
+          <Button variant="default" className="bg-linkedin-primary hover:bg-linkedin-dark">
+            Inscreva-se agora
+          </Button>
+        </div>
       </div>
     </nav>
   );

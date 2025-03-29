@@ -26,9 +26,9 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				linkedin: {
-					primary: '#0077B5',
-					secondary: '#00a0dc',
-					dark: '#004471',
+					primary: '#005f95',
+					secondary: '#005f95',
+					dark: '#004b76',
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',

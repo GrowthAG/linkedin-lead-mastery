@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Trophy, Award, Landmark, Users, Linkedin, Star } from 'lucide-react';
+import { Trophy, Award, Landmark, Users, Linkedin, Star, Target, BarChart, Rocket } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,17 +8,17 @@ import { Button } from "@/components/ui/button";
 const instructors = [
   {
     name: "Giulliano Alves",
-    role: "Sales Navigator | Marketing Digital | LinkedIn Strategist",
+    role: "Revenue Expert | B2B Growth Specialist | +R$100MM para empresas B2B & SaaS",
     photo: "/lovable-uploads/2c9551f6-2632-4b26-a272-76ab6ec2797f.png",
     testimonial: "Desenvolvi este método após anos testando centenas de abordagens no LinkedIn. Não é baseado em teorias, mas em dados reais e experiência prática com mais de 2.500 profissionais.",
     achievements: [
-      "Speaker e consultor com foco em estratégias B2B",
-      "Especialista em LinkedIn e prospecção digital",
-      "Criador do método LinkedIn Lab"
+      "Especialista em Growth, ABM & Revenue Cycle",
+      "Gerador de +R$100MM em mídia paga gerenciados",
+      "Consultor de estratégias B2B para SaaS"
     ],
     stats: [
       { icon: Trophy, value: "5k+", label: "conexões" },
-      { icon: Users, value: "200+", label: "alunos" }
+      { icon: BarChart, value: "R$100MM+", label: "em mídia" }
     ],
     linkedIn: "https://www.linkedin.com/in/giullianoalvess/"
   },

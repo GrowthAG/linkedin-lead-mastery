@@ -19,7 +19,7 @@ const Footer = () => {
               <a href="#" className="text-linkedin-secondary hover:text-white transition-colors">
                 <LinkedinIcon className="h-5 w-5" />
               </a>
-              <a href="mailto:contato@linkedinhackers.com.br" className="text-linkedin-secondary hover:text-white transition-colors">
+              <a href="mailto:contato@revhackers.academy" className="text-linkedin-secondary hover:text-white transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -54,10 +54,10 @@ const Footer = () => {
               Dúvidas ou precisa de ajuda? Entre em contato conosco:
             </p>
             <a 
-              href="mailto:seuemail@dominio.com" 
+              href="mailto:contato@revhackers.academy" 
               className="text-linkedin-secondary hover:underline"
             >
-              seuemail@dominio.com
+              contato@revhackers.academy
             </a>
             
             <div className="mt-6 flex items-center">

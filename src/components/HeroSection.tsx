@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Users, Trophy, Timer, ShieldCheck } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { Card, CardContent } from "@/components/ui/card";
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
@@ -78,45 +79,47 @@ const HeroSection = () => {
           </div>
           
           <div className="lg:w-2/5 lg:pl-12 w-full">
-            <div className="bg-white rounded-xl shadow-xl p-6 border-2 border-linkedin-primary/20 relative transform hover:scale-105 transition-all duration-300">
+            <Card className="bg-white rounded-xl shadow-xl p-6 border-2 border-[#1EAEDB] relative transform hover:scale-105 transition-all duration-300">
               <div className="absolute -top-4 -right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                 ACESSO IMEDIATO
               </div>
               
-              <div className="bg-gradient-to-r from-linkedin-primary to-linkedin-secondary text-white p-4 rounded-lg mb-6">
-                <h3 className="text-xl font-bold flex items-center">
-                  <span className="mr-2">✨</span> O que você vai dominar:
-                </h3>
-              </div>
-              
-              <ul className="space-y-4">
-                {[
-                  "Como criar hooks IRRESISTÍVEIS que geram até 300% mais cliques e visualizações",
-                  "Como formatar seu conteúdo para HIPNOTIZAR leitores do início ao fim",
-                  "Sistema INFINITO de ideias para nunca mais ficar sem conteúdo",
-                  "Estratégia 80/20 para crescer sua audiência trabalhando MENOS",
-                  "Como transformar seu perfil num GERADOR AUTOMÁTICO de vendas 24/7"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <div className="bg-linkedin-primary/10 p-1 rounded-full text-linkedin-primary mr-3 mt-1">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <span className={`${isMobile ? 'text-sm' : 'text-base'} font-medium`}>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="mt-6 bg-gray-50 p-3 rounded-lg border border-gray-200">
-                <p className="text-sm text-gray-600 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9z" clipRule="evenodd" />
-                  </svg>
-                  <span className="font-bold">BÔNUS LIMITADO:</span> Primeiros 20 inscritos recebem auditoria personalizada do seu perfil + plano de 90 dias
-                </p>
-              </div>
-            </div>
+              <CardContent className="p-0">
+                <div className="bg-gradient-to-r from-[#1EAEDB] to-[#0FA0CE] text-white p-4 rounded-lg mb-6">
+                  <h3 className="text-xl font-bold flex items-center">
+                    <span className="mr-2">✨</span> O que você vai dominar:
+                  </h3>
+                </div>
+                
+                <ul className="space-y-4">
+                  {[
+                    "Como criar hooks IRRESISTÍVEIS que geram até 300% mais cliques e visualizações",
+                    "Como formatar seu conteúdo para HIPNOTIZAR leitores do início ao fim",
+                    "Sistema INFINITO de ideias para nunca mais ficar sem conteúdo",
+                    "Estratégia 80/20 para crescer sua audiência trabalhando MENOS",
+                    "Como transformar seu perfil num GERADOR AUTOMÁTICO de vendas 24/7"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="bg-[#1EAEDB]/10 p-1 rounded-full text-[#1EAEDB] mr-3 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <span className={`${isMobile ? 'text-sm' : 'text-base'} font-medium`}>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                <div className="mt-6 bg-[#E6F7FF] p-3 rounded-lg border border-[#1EAEDB]/30">
+                  <p className="text-sm text-gray-600 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#1EAEDB] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9z" clipRule="evenodd" />
+                    </svg>
+                    <span className="font-bold">BÔNUS LIMITADO:</span> Primeiros 20 inscritos recebem auditoria personalizada do seu perfil + plano de 90 dias
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

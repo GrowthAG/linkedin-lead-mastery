@@ -24,17 +24,17 @@ const instructors = [
   },
   {
     name: "Henrique Caner",
-    role: "LinkedIn Strategy | Copywriting | Geração de Leads B2B",
+    role: "Advisor de Growth 2024 | Growth Hacker | CMO as a Service | Geração de Demanda",
     photo: "/lovable-uploads/6638bfe7-fad6-4184-b786-77df16a32ed1.png",
     testimonial: "Transformei minha presença digital através de estratégias que realmente funcionam. Nossos alunos conseguem resultados concretos porque aplicamos técnicas testadas e comprovadas no mercado atual.",
     achievements: [
-      "Especialista em criação de conteúdo para LinkedIn",
-      "Estrategista de Marketing Digital",
-      "Especialista em conversão de conexões em oportunidades"
+      "Especialista em estratégias de Growth e Revenue Hacks",
+      "CMO as a Service para empresas B2B e SaaS",
+      "Responsável por R$50M+ em M&A de Startups"
     ],
     stats: [
       { icon: Award, value: "15+", label: "leads/semana" },
-      { icon: Landmark, value: "10k+", label: "seguidores" }
+      { icon: Landmark, value: "R$50M+", label: "em M&A" }
     ],
     linkedIn: "https://www.linkedin.com/in/henriquecaner/"
   }

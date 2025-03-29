@@ -10,6 +10,7 @@ import {
   Zap 
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import InstructorsSection from './InstructorsSection';
 
 const modules = [
   {
@@ -138,6 +139,9 @@ const ModulesSection = () => {
             </div>
           ))}
         </div>
+        
+        {/* Seção de instrutores adicionada aqui */}
+        <InstructorsSection />
         
         <div className="mt-12 text-center">
           <h3 className="text-2xl font-bold mb-4">+ Bônus Especiais</h3>

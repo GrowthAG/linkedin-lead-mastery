@@ -9,6 +9,12 @@ import FaqSection from '@/components/FaqSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
 
+// Links para materiais do treinamento
+const trainingMaterials = {
+  module1: "https://doc.clickup.com/9013724327/d/h/8cm5157-1473/f1b64c100816cec",
+  module2: "https://doc.clickup.com/9013724327/d/h/8cm5157-1493/d9ab176d673d531"
+};
+
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -18,7 +24,7 @@ const Index = () => {
       <ModulesSection />
       <TestimonialsSection />
       <FaqSection />
-      <CtaSection />
+      <CtaSection materials={trainingMaterials} />
       <Footer />
     </div>
   );

@@ -1,6 +1,7 @@
 
-import React from 'react';
-import { Star, BarChart, TrendingUp, Users } from 'lucide-react';
+import React, { useState } from 'react';
+import { Star, BarChart, TrendingUp, Users, ThumbsUp } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
@@ -24,9 +25,29 @@ const testimonials = [
     testimonial: "Minha startup precisava de pipeline qualificado, e eu estava queimando cash em ads sem resultado. Este treinamento mudou tudo - hoje geramos leads de alto fit toda semana com conteúdo orgânico estruturado.",
     avatar: "https://i.pravatar.cc/150?img=5",
   },
+  {
+    name: "Rafael Gomes",
+    position: "Growth Hacker",
+    company: "Digital Spark",
+    testimonial: "Implementei a estratégia de hooks no meu conteúdo e minha taxa de engajamento saltou 278% em 2 semanas. O ROI é absurdo - fechei 3 contratos apenas com conexões orgânicas do LinkedIn.",
+    avatar: "https://i.pravatar.cc/150?img=8",
+  },
 ];
 
 const TestimonialsSection = () => {
+  const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const [showAll, setShowAll] = useState(false);
+  
+  const displayTestimonials = showAll ? testimonials : testimonials.slice(0, 3);
+  
+  const handleNextTestimonial = () => {
+    setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+  
+  const handlePrevTestimonial = () => {
+    setActiveTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  };
+  
   return (
     <section id="testimonials" className="py-16 bg-gray-50 px-4">
       <div className="max-w-7xl mx-auto">
@@ -39,8 +60,59 @@ const TestimonialsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+        {/* Featured testimonial for mobile - shown on smaller screens */}
+        <div className="md:hidden mb-8">
+          <div 
+            className="bg-white p-6 rounded-lg shadow-md flex flex-col h-full card-hover"
+          >
+            <div className="flex items-center mb-4 text-yellow-400">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="fill-current h-5 w-5" />
+              ))}
+            </div>
+            
+            <p className="text-gray-700 italic mb-6 flex-grow">
+              "{testimonials[activeTestimonial].testimonial}"
+            </p>
+            
+            <div className="flex items-center mt-auto">
+              <img 
+                src={testimonials[activeTestimonial].avatar} 
+                alt={testimonials[activeTestimonial].name} 
+                className="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 className="font-semibold">{testimonials[activeTestimonial].name}</h4>
+                <p className="text-sm text-gray-600">
+                  {testimonials[activeTestimonial].position}, {testimonials[activeTestimonial].company}
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex justify-between mt-4">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                onClick={handlePrevTestimonial}
+                className="text-linkedin-primary"
+              >
+                Anterior
+              </Button>
+              <Button 
+                variant="outline" 
+                size="sm" 
+                onClick={handleNextTestimonial}
+                className="text-linkedin-primary"
+              >
+                Próximo
+              </Button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Grid of testimonials - shown on larger screens */}
+        <div className="hidden md:grid md:grid-cols-3 gap-8">
+          {displayTestimonials.map((testimonial, index) => (
             <div 
               key={index}
               className="bg-white p-6 rounded-lg shadow-md flex flex-col h-full card-hover"
@@ -72,6 +144,19 @@ const TestimonialsSection = () => {
           ))}
         </div>
         
+        {/* Show more/less button */}
+        {testimonials.length > 3 && (
+          <div className="text-center mt-8 hidden md:block">
+            <Button
+              variant="outline"
+              onClick={() => setShowAll(!showAll)}
+              className="border-linkedin-primary text-linkedin-primary hover:bg-linkedin-primary/10"
+            >
+              {showAll ? "Mostrar menos" : "Ver mais depoimentos"}
+            </Button>
+          </div>
+        )}
+        
         <div className="mt-12 text-center bg-white p-8 rounded-lg shadow-md">
           <h3 className="text-2xl font-bold mb-4">Métricas para growth hackers de verdade:</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
@@ -92,7 +177,7 @@ const TestimonialsSection = () => {
                 label: "leads enterprise/semana" 
               },
               { 
-                icon: Star,
+                icon: ThumbsUp,
                 number: "5-10x", 
                 label: "ROI validado por dados" 
               }

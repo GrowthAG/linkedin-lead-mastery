@@ -2,12 +2,14 @@
 import React from 'react';
 import { Trophy, Award, Landmark, Users, Linkedin, Star } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardContent } from "@/components/ui/card";
 
 const instructors = [
   {
     name: "Giulliano Alves",
     role: "Sales Navigator | Marketing Digital | LinkedIn Strategist",
     photo: "/lovable-uploads/2c9551f6-2632-4b26-a272-76ab6ec2797f.png",
+    testimonial: "Desenvolvi este método após anos testando centenas de abordagens no LinkedIn. Não é baseado em teorias, mas em dados reais e experiência prática com mais de 2.500 profissionais.",
     achievements: [
       "Speaker e consultor com foco em estratégias B2B",
       "Especialista em LinkedIn e prospecção digital",
@@ -23,6 +25,7 @@ const instructors = [
     name: "Henrique Caner",
     role: "LinkedIn Strategy | Copywriting | Geração de Leads B2B",
     photo: "/lovable-uploads/6638bfe7-fad6-4184-b786-77df16a32ed1.png",
+    testimonial: "Transformei minha presença digital através de estratégias que realmente funcionam. Nossos alunos conseguem resultados concretos porque aplicamos técnicas testadas e comprovadas no mercado atual.",
     achievements: [
       "Especialista em criação de conteúdo para LinkedIn",
       "Estrategista de Marketing Digital",
@@ -47,27 +50,38 @@ const InstructorsSection = () => {
           </p>
         </div>
 
-        <div className="mb-12 bg-linkedin-primary/5 p-6 rounded-lg max-w-4xl mx-auto">
-          <div className="flex items-center space-x-4 mb-4">
-            {[1, 2, 3, 4, 5].map((_, i) => (
-              <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
-            ))}
-          </div>
-          <p className="text-lg italic mb-4">
-            "Desenvolvemos este método após anos testando centenas de abordagens diferentes. Não é baseado em teorias, 
-            mas em dados reais e experiência prática com mais de 2.500 profissionais que transformaram seus perfis de 
-            invisíveis para referências em seus nichos."
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {instructors.map((instructor, index) => (
+            <Card key={index} className="bg-linkedin-primary/5 p-6 rounded-lg shadow-sm">
+              <div className="flex items-center space-x-4 mb-4">
+                {[1, 2, 3, 4, 5].map((_, i) => (
+                  <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <CardContent className="p-0">
+                <p className="text-lg italic mb-4">
+                  "{instructor.testimonial}"
+                </p>
+                <div className="flex items-center">
+                  <Avatar className="h-10 w-10 mr-3">
+                    <AvatarImage src={instructor.photo} />
+                    <AvatarFallback>{instructor.name.charAt(0)}</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="font-semibold">{instructor.name}</p>
+                    <p className="text-sm text-gray-600">Co-Criador do LinkedIn Hackers</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <div className="mb-8 text-center">
+          <h3 className="text-2xl font-bold text-linkedin-primary">Conheça nossos especialistas</h3>
+          <p className="text-gray-600 mt-2">
+            Aprenda com quem realmente domina o LinkedIn e já transformou milhares de perfis
           </p>
-          <div className="flex items-center">
-            <Avatar className="h-10 w-10 mr-3">
-              <AvatarImage src={instructors[0].photo} />
-              <AvatarFallback>GA</AvatarFallback>
-            </Avatar>
-            <div>
-              <p className="font-semibold">Giulliano & Henrique</p>
-              <p className="text-sm text-gray-600">Criadores do LinkedIn Hackers</p>
-            </div>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -127,6 +141,14 @@ const InstructorsSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Desenvolvemos este método após anos testando centenas de abordagens diferentes. 
+            <span className="font-bold"> Não é baseado em teorias, mas em dados reais e experiência prática 
+            com mais de 2.500 profissionais que transformaram seus perfis de invisíveis para referências em seus nichos.</span>
+          </p>
         </div>
       </div>
     </section>

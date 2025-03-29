@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <LinkedinIcon className="h-8 w-8 text-linkedin-primary" />
-          <span className="font-bold text-xl text-linkedin-primary">LinkedIn Hackers</span>
+          <span className="font-bold text-xl text-linkedin-primary">LinkedIn Hackers Academy</span>
         </div>
         
         <div className="hidden md:flex items-center space-x-6">

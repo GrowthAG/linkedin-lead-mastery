@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <LinkedinIcon className="h-6 w-6 text-linkedin-primary" />
-              <span className="font-bold text-xl text-white">LinkedIn Hackers</span>
+              <span className="font-bold text-xl text-white">LinkedIn Hackers Academy</span>
             </div>
             <p className="mb-4">
               O treinamento mais completo para transformar seu LinkedIn em uma máquina de oportunidades.

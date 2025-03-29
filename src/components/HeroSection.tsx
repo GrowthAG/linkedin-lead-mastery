@@ -13,7 +13,7 @@ const HeroSection = () => {
               <Clock className="inline-block w-4 h-4 mr-1" /> Vagas limitadas: últimas 15 disponíveis
             </div>
             
-            <h1 className="gradient-text leading-tight">
+            <h1 className="text-[#005f95] leading-tight">
               Pare de perder negócios no LinkedIn: estratégias que os 3% de sucesso não compartilham
             </h1>
             

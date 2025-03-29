@@ -17,9 +17,9 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#005f95] leading-tight">
-              Destaque-se no LinkedIn: <br className="hidden md:block" />
-              o método que já transformou <br className="hidden md:block" />
-              +2.500 profissionais em máquinas de vendas
+              O segredo dos 3% que dominam <br className="hidden md:block" />
+              o LinkedIn e fecham negócios <br className="hidden md:block" />
+              enquanto você continua invisível
             </h1>
             
             <p className={`${isMobile ? 'text-lg' : 'text-xl md:text-2xl'} text-gray-700`}>

@@ -14,7 +14,7 @@ const HeroSection = () => {
             </div>
             
             <h1 className="gradient-text leading-tight">
-              Cansado de ficar invisível no LinkedIn enquanto seus concorrentes fecham negócios?
+              Pare de perder negócios no LinkedIn: estratégias que os 3% de sucesso não compartilham
             </h1>
             
             <p className="text-xl text-gray-700 md:text-2xl">

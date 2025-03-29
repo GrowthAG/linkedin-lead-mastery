@@ -10,7 +10,7 @@ const instructors = [
     name: "Giulliano Alves",
     role: "Revenue Expert | B2B Growth Specialist | +R$100MM para empresas B2B & SaaS",
     photo: "/lovable-uploads/2c9551f6-2632-4b26-a272-76ab6ec2797f.png",
-    testimonial: "Desenvolvi este método após anos testando centenas de abordagens no LinkedIn. Não é baseado em teorias, mas em dados reais e experiência prática com mais de 2.500 profissionais.",
+    testimonial: "E aí, growth hacker! Depois de queimar milhares em ads sem ROI, criei este método data-driven. Testei +500 formatos de conteúdo e abordagens no LinkedIn para extrair insights reais que você não encontra em blogs ou cursos teóricos. Isso não é achismo, é growth hacking puro!",
     achievements: [
       "Especialista em Growth, ABM & Revenue Cycle",
       "Gerador de +R$100MM em mídia paga gerenciados",
@@ -26,7 +26,7 @@ const instructors = [
     name: "Henrique Caner",
     role: "Advisor de Growth 2024 | Growth Hacker | CMO as a Service | Geração de Demanda",
     photo: "/lovable-uploads/6638bfe7-fad6-4184-b786-77df16a32ed1.png",
-    testimonial: "Transformei minha presença digital através de estratégias que realmente funcionam. Nossos alunos conseguem resultados concretos porque aplicamos técnicas testadas e comprovadas no mercado atual.",
+    testimonial: "Se você é analista de growth ou startup founder e quer gerar pipeline qualificado sem queimar budget em teste A/B sem fim, temos a solução! Aplico frameworks validados que tiram startups do zero ao MRR/ARR previsível em tempo recorde, sem bullshit de coach ou teoria acadêmica.",
     achievements: [
       "Especialista em estratégias de Growth e Revenue Hacks",
       "CMO as a Service para empresas B2B e SaaS",
@@ -45,9 +45,9 @@ const InstructorsSection = () => {
     <section id="instructors" className="py-16 px-4 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="gradient-text mb-4">Quem Está por Trás dos Resultados</h2>
+          <h2 className="gradient-text mb-4">Growth Hackers por trás dos números</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Não são apenas teorias. Aprendemos na prática o que realmente funciona no LinkedIn atual.
+            Nada de teoria ou achismos. Somos data-driven e obsessivos por resultados mensuráveis.
           </p>
         </div>
 
@@ -79,9 +79,9 @@ const InstructorsSection = () => {
         </div>
 
         <div className="mb-8 text-center">
-          <h3 className="text-2xl font-bold text-linkedin-primary">Conheça nossos especialistas</h3>
+          <h3 className="text-2xl font-bold text-linkedin-primary">Conheça os especialistas em growth</h3>
           <p className="text-gray-600 mt-2">
-            Aprenda com quem realmente domina o LinkedIn e já transformou milhares de perfis
+            Aprenda frameworks de crescimento com quem já validou o método em centenas de startups
           </p>
         </div>
 
@@ -114,7 +114,7 @@ const InstructorsSection = () => {
 
                 <div className="p-6 flex-grow">
                   <div className="mb-6">
-                    <h4 className="text-lg font-semibold mb-3 text-linkedin-primary">Expertise:</h4>
+                    <h4 className="text-lg font-semibold mb-3 text-linkedin-primary">Stack de Growth:</h4>
                     <ul className="space-y-2">
                       {instructor.achievements.map((achievement, idx) => (
                         <li key={idx} className="flex items-start">
@@ -146,16 +146,16 @@ const InstructorsSection = () => {
 
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Desenvolvemos este método após anos testando centenas de abordagens diferentes. 
-            <span className="font-bold"> Não é baseado em teorias, mas em dados reais e experiência prática 
-            com mais de 2.500 profissionais que transformaram seus perfis de invisíveis para referências em seus nichos.</span>
+            Tá cansado de teoria que não gera resultado? Chega de queimar CAC sem retorno!
+            <span className="font-bold"> Nosso treinamento é feito por e para growth hackers - profissionais obcecados por métricas 
+            que geraram pipeline real para mais de 2.500 startups e scale-ups.</span>
           </p>
           
           <Button 
             className="cta-button"
             onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
           >
-            Quero Aprender com os Especialistas
+            Quero Hackear o Algoritmo do LinkedIn
           </Button>
         </div>
       </div>

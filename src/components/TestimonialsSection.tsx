@@ -1,27 +1,27 @@
 
 import React from 'react';
-import { Star } from 'lucide-react';
+import { Star, BarChart, TrendingUp, Users } from 'lucide-react';
 
 const testimonials = [
   {
     name: "Mariana Silva",
     position: "Marketing Manager",
     company: "Tech Solutions",
-    testimonial: "Cresci de 600 para 15.000 seguidores em apenas 6 meses aplicando as estratégias deste treinamento. O mais impressionante é que minha taxa de conversão triplicou!",
+    testimonial: "Cresci de 600 para 15.000 seguidores em apenas 6 meses aplicando as estratégias deste treinamento. O mais impressionante? Minha taxa de conversão triplicou! Todo growth hacker deveria dominar essas táticas.",
     avatar: "https://i.pravatar.cc/150?img=1",
   },
   {
     name: "Carlos Mendes",
     position: "Sales Director",
     company: "Finance Corp",
-    testimonial: "Já fiz vários cursos de LinkedIn antes, mas este é outro nível. Aprendi como criar hooks que realmente funcionam e consegui 5 clientes novos no primeiro mês.",
+    testimonial: "Como growth analyst, já tinha feito vários cursos de LinkedIn, mas esse é de outro planeta! Aprendi hooks de conversão que realmente funcionam para B2B e consegui 5 clientes enterprise no primeiro mês após implementar.",
     avatar: "https://i.pravatar.cc/150?img=3",
   },
   {
     name: "Patricia Oliveira",
     position: "CEO",
     company: "Creative Agency",
-    testimonial: "Eu estava completamente perdida no LinkedIn, postando sem estratégia. Depois deste treinamento, consigo gerar leads qualificados semanalmente sem esforço.",
+    testimonial: "Minha startup precisava de pipeline qualificado, e eu estava queimando cash em ads sem resultado. Este treinamento mudou tudo - hoje geramos leads de alto fit toda semana com conteúdo orgânico estruturado.",
     avatar: "https://i.pravatar.cc/150?img=5",
   },
 ];
@@ -32,10 +32,10 @@ const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="gradient-text mb-4">
-            O que dizem nossos alunos
+            O que os growth hackers estão falando
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Centenas de profissionais já transformaram sua presença no LinkedIn com nosso método
+            Startups, analistas e profissionais de growth que transformaram sua geração de leads com nossas táticas data-driven
           </p>
         </div>
         
@@ -73,17 +73,36 @@ const TestimonialsSection = () => {
         </div>
         
         <div className="mt-12 text-center bg-white p-8 rounded-lg shadow-md">
-          <h3 className="text-2xl font-bold mb-4">Resultados que você pode esperar:</h3>
+          <h3 className="text-2xl font-bold mb-4">Métricas para growth hackers de verdade:</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
             {[
-              { number: "3-5x", label: "mais visualizações" },
-              { number: "300%", label: "aumento em conexões" },
-              { number: "10-20", label: "leads por semana" },
-              { number: "5-10x", label: "ROI do investimento" }
+              { 
+                icon: TrendingUp,
+                number: "3-5x", 
+                label: "aumento em alcance orgânico" 
+              },
+              { 
+                icon: Users,
+                number: "300%", 
+                label: "mais conexões qualificadas" 
+              },
+              { 
+                icon: BarChart,
+                number: "10-20", 
+                label: "leads enterprise/semana" 
+              },
+              { 
+                icon: Star,
+                number: "5-10x", 
+                label: "ROI validado por dados" 
+              }
             ].map((stat, idx) => (
               <div key={idx} className="text-center">
+                <div className="flex justify-center mb-2">
+                  <stat.icon className="h-6 w-6 text-linkedin-primary" />
+                </div>
                 <div className="text-3xl font-bold text-linkedin-primary">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-gray-600 text-sm">{stat.label}</div>
               </div>
             ))}
           </div>

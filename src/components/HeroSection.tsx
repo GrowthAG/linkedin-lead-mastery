@@ -9,10 +9,10 @@ const HeroSection = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="pt-20 pb-12 md:pt-28 md:pb-20 px-4 bg-gradient-to-b from-white to-gray-50">
+    <section className="pt-20 pb-12 md:pt-28 md:pb-20 px-4 bg-gradient-to-b from-white to-gray-50 w-full overflow-x-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-start lg:items-center">
-          <div className="lg:w-3/5 space-y-5 mb-10 lg:mb-0">
+          <div className="lg:w-3/5 space-y-5 mb-10 lg:mb-0 w-full">
             <div className="inline-flex items-center bg-red-50 text-red-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-3 animate-pulse">
               <Clock className="inline-block w-4 h-4 mr-1.5" /> 
               <span>Últimas 10 vagas disponíveis</span>

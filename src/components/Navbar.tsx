@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const navbarClass = `fixed top-0 left-0 right-0 z-50 ${
     scrolled ? 'bg-white shadow-md' : 'bg-white/90 backdrop-blur-sm'
-  } border-b border-gray-200 py-3 px-4 md:px-8 transition-all duration-300`;
+  } border-b border-gray-200 py-3 px-4 md:px-8 transition-all duration-300 w-full`;
 
   return (
     <nav className={navbarClass}>
@@ -65,7 +65,7 @@ const Navbar = () => {
       
       {/* Mobile menu */}
       {isMobile && isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 py-4 px-6 flex flex-col space-y-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 py-4 px-6 flex flex-col space-y-4 w-full">
           <a 
             href="#modules" 
             className="text-gray-600 hover:text-linkedin-primary transition-colors py-2 border-b border-gray-100"

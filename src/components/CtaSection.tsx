@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift, Users } from 'lucide
 
 const CtaSection = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white">
+    <section className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white w-full overflow-x-hidden">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-center mb-8">
           <div className="bg-white/10 px-4 py-1 rounded-full text-yellow-300 text-sm font-bold">
@@ -22,7 +22,7 @@ const CtaSection = () => {
         </p>
         
         <div className="flex flex-col md:flex-row gap-8 mb-12">
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl md:w-2/3">
+          <div className="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-xl md:w-2/3 w-full">
             <h3 className="text-2xl font-bold mb-6 text-yellow-300 flex items-center">
               <Gift className="mr-2 h-6 w-6" /> O que você recebe hoje:
             </h3>
@@ -50,7 +50,7 @@ const CtaSection = () => {
             </div>
           </div>
           
-          <div className="md:w-1/3 bg-white rounded-xl p-6 text-[#005f95] flex flex-col justify-center">
+          <div className="md:w-1/3 w-full bg-white rounded-xl p-6 text-[#005f95] flex flex-col justify-center">
             <div className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-bold inline-block mb-3 self-start animate-pulse">
               OFERTA POR TEMPO LIMITADO
             </div>

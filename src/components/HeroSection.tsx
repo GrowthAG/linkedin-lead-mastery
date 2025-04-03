@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -13,8 +12,8 @@ const HeroSection = () => {
   };
   
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-4 bg-gradient-to-b from-white to-gray-50 w-full overflow-x-hidden">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between pt-20 pb-12 px-4 bg-gradient-to-b from-white to-gray-50 w-full overflow-x-hidden">
+      <div className="max-w-2xl text-center md:text-left mx-auto md:mx-0">
         <div className="inline-flex items-center bg-linkedin-primary/10 text-linkedin-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
           <span>Metodologia comprovada por 2.500+ profissionais</span>
         </div>
@@ -25,17 +24,17 @@ const HeroSection = () => {
           em 30 Dias ou Menos
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-8">
+        <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mb-8">
           <strong className="text-linkedin-primary">2.500+ profissionais</strong> já transformaram o LinkedIn em canal de <strong className="text-linkedin-primary">geração automática de leads</strong> usando nosso método exclusivo comprovado por números.
         </p>
         
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-8 max-w-2xl mx-auto text-left">
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-8 text-left">
           <p className="text-lg md:text-xl font-medium">
             "Depois de aplicar o método por apenas 3 semanas, fechei 2 contratos que pagaram o investimento mais de 10x" - <span className="italic">Marcela R., Consultora Financeira</span>
           </p>
         </div>
         
-        <div className="flex items-center justify-center gap-2 py-4">
+        <div className="flex items-center justify-start gap-2 py-4">
           <div className="flex -space-x-2">
             {[1, 2, 3, 4].map(num => (
               <img 
@@ -59,6 +58,15 @@ const HeroSection = () => {
           Ver benefícios
           <ArrowDown className="ml-2 h-4 w-4" />
         </Button>
+      </div>
+
+      {/* Imagem viral ao lado */}
+      <div className="mt-10 md:mt-0 md:ml-10 w-full md:w-[450px] flex justify-center">
+        <img 
+          src="/images/ferrari-post.png" 
+          alt="Post viral do LinkedIn" 
+          className="rounded-xl shadow-xl max-w-full h-auto"
+        />
       </div>
     </section>
   );

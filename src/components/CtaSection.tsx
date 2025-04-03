@@ -8,8 +8,8 @@ const CtaSection = () => {
     <section className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white w-full overflow-x-hidden">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-center mb-8">
-          <div className="bg-white/10 px-4 py-1 rounded-full text-yellow-300 text-sm font-bold">
-            ÚLTIMA CHANCE
+          <div className="bg-red-500 px-4 py-1 rounded-full text-white text-sm font-bold">
+            VAGAS LIMITADAS - ENCERRA EM 24 HORAS
           </div>
         </div>
         
@@ -28,8 +28,8 @@ const CtaSection = () => {
             </h3>
             <div className="grid gap-4 text-left">
               {[
-                "Acesso vitalício ao treinamento completo com 7 módulos",
-                "Todos os 9 bônus exclusivos (valor de R$1.997)",
+                "Acesso vitalício ao treinamento completo com 7 módulos (R$2.091)",
+                "Todos os 9 bônus exclusivos (valor de R$1.880)",
                 "Comunidade exclusiva de suporte por 12 meses",
                 "Atualizações gratuitas para sempre",
                 "Templates prontos para hooks, posts e carrosséis",
@@ -51,32 +51,32 @@ const CtaSection = () => {
           </div>
           
           <div className="md:w-1/3 w-full bg-white rounded-xl p-6 text-[#005f95] flex flex-col justify-center">
-            <div className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-bold inline-block mb-3 self-start animate-pulse">
-              OFERTA POR TEMPO LIMITADO
+            <div className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-bold inline-block mb-3 self-start animate-pulse">
+              OFERTA POR APENAS 24 HORAS
             </div>
             
             <h3 className="text-2xl font-bold mb-2">Investimento único:</h3>
             <div className="mb-4">
-              <div className="text-gray-500 line-through">De R$1.997</div>
+              <div className="text-gray-500 line-through">De R$3.971</div>
               <div className="text-3xl font-bold">Por R$997</div>
               <div className="text-sm text-gray-600 mt-1">ou 12x de R$97</div>
             </div>
             
             <div className="flex items-center gap-2 text-sm mb-4 bg-green-50 p-3 rounded-lg border border-green-200">
               <ShieldCheck className="text-green-600 h-5 w-5 flex-shrink-0" />
-              <p><span className="font-bold">Garantia de Resultado:</span> Resultados em 30 dias ou seu dinheiro de volta.</p>
+              <p><span className="font-bold">Garantia de Resultado:</span> Ou você gera mais visualizações e reuniões em 30 dias, ou devolvemos 100% do seu dinheiro.</p>
             </div>
             
             <div className="flex items-center gap-2 text-sm mb-6 bg-red-50 p-3 rounded-lg border border-red-200">
               <Clock className="text-red-600 h-5 w-5 flex-shrink-0" />
-              <p>Promoção válida por <span className="font-bold">apenas 24 horas</span> ou até esgotarem as vagas</p>
+              <p>Promoção válida por <span className="font-bold">apenas 24 horas</span> ou até esgotarem as 20 vagas para auditoria personalizada</p>
             </div>
             
             <Button 
               className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
               onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
             >
-              Garantir Minha Vaga Agora
+              Quero Transformar Meu LinkedIn Agora
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>

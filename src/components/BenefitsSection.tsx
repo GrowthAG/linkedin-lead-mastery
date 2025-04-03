@@ -4,33 +4,33 @@ import { TrendingUp, Lightbulb, Clock, Target, Zap, Users } from 'lucide-react';
 
 const benefits = [
   {
-    title: "Cresça Organicamente",
-    description: "Aprenda técnicas para crescer seu perfil de forma 100% orgânica, sem truques ou números falsos.",
+    title: "3x mais visualizações",
+    description: "Ganhe 3x mais visualizações nos seus posts em 30 dias com técnicas específicas de engajamento do algoritmo.",
     icon: TrendingUp,
   },
   {
-    title: "Ideias Infinitas",
-    description: "Sistema prático para nunca mais ficar sem ideias de conteúdo, mesmo em nichos considerados 'chatos'.",
-    icon: Lightbulb,
-  },
-  {
-    title: "Economize Tempo",
-    description: "Técnicas otimizadas para maximizar seus resultados enquanto economiza tempo e esforço.",
-    icon: Clock,
-  },
-  {
-    title: "Atraia Clientes",
-    description: "Transforme seu perfil em uma máquina de prospecção que atrai potenciais clientes 24 horas por dia.",
+    title: "10-20 leads por semana",
+    description: "Gere de 10 a 20 leads qualificados por semana com posts estrategicamente estruturados para converter.",
     icon: Target,
   },
   {
-    title: "Estratégias Comprovadas",
-    description: "Acesso a estratégias testadas e aprovadas que realmente funcionam no algoritmo atual do LinkedIn.",
+    title: "Economize 70% do tempo",
+    description: "Diminua o tempo de criação de conteúdo em 70% com templates, frameworks e processos otimizados.",
+    icon: Clock,
+  },
+  {
+    title: "Perfil que vende 24/7",
+    description: "Transforme seu perfil em uma página de vendas automática que atrai clientes enquanto você dorme.",
     icon: Zap,
   },
   {
-    title: "Comunidade Exclusiva",
-    description: "Faça parte de uma comunidade de pessoas determinadas a dominar o LinkedIn para gerar resultados.",
+    title: "Autoridade em qualquer nicho",
+    description: "Desenvolva autoridade até nos nichos mais técnicos e conservadores com técnicas específicas por segmento.",
+    icon: Lightbulb,
+  },
+  {
+    title: "Fim da prospecção ativa",
+    description: "Chega de correr atrás de clientes. Aprenda a atrair leads pré-vendidos que entram em contato com você.",
     icon: Users,
   }
 ];
@@ -41,10 +41,10 @@ const BenefitsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="gradient-text mb-4">
-            Por que este treinamento é diferente?
+            Benefícios reais e mensuráveis para seu negócio
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Este não é mais um curso genérico com dicas básicas. Aqui você encontra estratégias avançadas que realmente funcionam.
+            Resultados comprovados por mais de 2.500 profissionais que implementaram o método
           </p>
         </div>
         

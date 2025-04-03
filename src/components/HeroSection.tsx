@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, Users, Trophy, Timer, ShieldCheck, Check } from 'lucide-react';
+import { ArrowRight, Clock, Users, Trophy, ShieldCheck, Check } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -19,13 +19,13 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#005f95] leading-tight">
-              O segredo dos 3% <br className="hidden md:block" />
-              que dominam o LinkedIn <br className="hidden md:block" />
-              enquanto você segue invisível
+              Transforme seu LinkedIn em uma<br className="hidden md:block" />
+              Máquina de Vendas em<br className="hidden md:block" />
+              30 Dias ou Menos
             </h1>
             
             <p className={`${isMobile ? 'text-lg' : 'text-xl'} text-gray-700 max-w-2xl`}>
-              <strong className="text-linkedin-primary">97% dos profissionais</strong> desperdiçam seu potencial no LinkedIn. Junte-se aos <strong className="text-linkedin-primary">3% que transformam conexões em contratos</strong> com métodos comprovados.
+              <strong className="text-linkedin-primary">2.500+ profissionais</strong> já transformaram o LinkedIn em canal de <strong className="text-linkedin-primary">geração automática de leads</strong> usando nosso método exclusivo comprovado por números.
             </p>
             
             <div className="flex items-center gap-2 py-3">
@@ -52,7 +52,7 @@ const HeroSection = () => {
             
             <div className="flex items-center gap-2 text-sm bg-green-50 p-3 rounded-lg my-4 border border-green-200">
               <ShieldCheck className="text-green-600 h-5 w-5 flex-shrink-0" />
-              <p><span className="font-bold">Garantia de Resultado:</span> Se em 30 dias você não tiver pelo menos 3x mais visualizações, devolvemos 100% do seu investimento.</p>
+              <p><span className="font-bold">Garantia de Resultado:</span> Ou você gera mais visualizações, leads e reuniões em 30 dias, ou devolvemos 100% do seu investimento.</p>
             </div>
             
             <div className="py-4 space-y-4 md:space-y-0 md:space-x-4 md:flex">
@@ -60,7 +60,7 @@ const HeroSection = () => {
                 className="w-full md:w-auto bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
               >
-                Garantir Minha Vaga Agora
+                Quero começar agora – Últimas vagas
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
@@ -68,11 +68,11 @@ const HeroSection = () => {
                 variant="outline" 
                 className="w-full md:w-auto border-linkedin-primary text-linkedin-primary hover:bg-linkedin-primary/10 text-base"
                 onClick={() => {
-                  const element = document.getElementById('testimonials');
+                  const element = document.getElementById('benefits');
                   if (element) element.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Ver depoimentos
+                Ver benefícios
               </Button>
             </div>
             
@@ -83,7 +83,7 @@ const HeroSection = () => {
                 <span className="ml-1">seguidores</span>
               </div>
               <div className="flex items-center">
-                <Timer className="text-linkedin-primary h-4 w-4 mr-1" />
+                <Check className="text-linkedin-primary h-4 w-4 mr-1" />
                 <span className="text-linkedin-primary font-bold">15-20</span>
                 <span className="ml-1">leads por semana</span>
               </div>
@@ -104,17 +104,17 @@ const HeroSection = () => {
               <CardContent className="p-0">
                 <div className="bg-gradient-to-r from-[#1EAEDB] to-[#0FA0CE] text-white p-4 rounded-lg mb-6">
                   <h3 className="text-xl font-bold flex items-center">
-                    <span className="mr-2">✨</span> O que você vai dominar:
+                    <span className="mr-2">✨</span> Resultados que você vai conquistar:
                   </h3>
                 </div>
                 
                 <ul className="space-y-4">
                   {[
-                    "Como criar hooks IRRESISTÍVEIS que geram até 300% mais cliques e visualizações",
-                    "Como formatar seu conteúdo para HIPNOTIZAR leitores do início ao fim",
-                    "Sistema INFINITO de ideias para nunca mais ficar sem conteúdo",
-                    "Estratégia 80/20 para crescer sua audiência trabalhando MENOS",
-                    "Como transformar seu perfil num GERADOR AUTOMÁTICO de vendas 24/7"
+                    "3x mais visualizações nos seus posts em apenas 30 dias",
+                    "10-20 leads qualificados por semana sem prospecção ativa",
+                    "Economia de 70% no tempo de criação de conteúdo",
+                    "Conversão de conexões em reuniões comerciais",
+                    "Autoridade reconhecida no seu nicho, até nos mais técnicos"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <div className="bg-[#1EAEDB]/10 p-1 rounded-full text-[#1EAEDB] mr-3 mt-1">
@@ -142,7 +142,7 @@ const HeroSection = () => {
                     className="w-full mt-4 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-2 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                     onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
                   >
-                    Garantir Minha Vaga
+                    Quero começar agora
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </div>

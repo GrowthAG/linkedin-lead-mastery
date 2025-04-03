@@ -4,7 +4,7 @@ import { ShieldCheck } from 'lucide-react';
 
 const GuaranteeSection = () => {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section id="garantia" className="py-16 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100">
           <div className="flex flex-col items-center">

@@ -11,6 +11,7 @@ import Footer from '@/components/Footer';
 import CreatorSection from '@/components/CreatorSection';
 import GuaranteeSection from '@/components/GuaranteeSection';
 import BonusSection from '@/components/BonusSection';
+import RealResultsSection from '@/components/RealResultsSection';
 
 const Index = () => {
   return (
@@ -20,8 +21,9 @@ const Index = () => {
       <BenefitsSection />
       <ModulesSection />
       <BonusSection />
-      <TestimonialsSection />
       <CreatorSection />
+      <RealResultsSection />
+      <TestimonialsSection />
       <GuaranteeSection />
       <FaqSection />
       <CtaSection />

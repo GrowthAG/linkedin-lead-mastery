@@ -8,8 +8,8 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FaqSection from '@/components/FaqSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
-import InstructorsSection from '@/components/InstructorsSection';
-import ObjectionsSection from '@/components/ObjectionsSection';
+import CreatorSection from '@/components/CreatorSection';
+import GuaranteeSection from '@/components/GuaranteeSection';
 
 const Index = () => {
   return (
@@ -19,8 +19,8 @@ const Index = () => {
       <BenefitsSection />
       <ModulesSection />
       <TestimonialsSection />
-      <InstructorsSection />
-      <ObjectionsSection />
+      <CreatorSection />
+      <GuaranteeSection />
       <FaqSection />
       <CtaSection />
       <Footer />

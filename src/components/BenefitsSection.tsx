@@ -41,10 +41,10 @@ const BenefitsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="gradient-text mb-4">
-            Benefícios reais e mensuráveis para seu negócio
+            Resultados que você vai conquistar
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Resultados comprovados por mais de 2.500 profissionais que implementaram o método
+            Benefícios reais e mensuráveis comprovados por mais de 2.500 profissionais
           </p>
         </div>
         

@@ -14,7 +14,7 @@ const CtaSection = () => {
         </div>
         
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-center">
-          Transforme seu LinkedIn em uma<br className="hidden md:block" /> máquina de vendas automática
+          Receba R$3.971 em valor total<br className="hidden md:block" /> por apenas R$997
         </h2>
         
         <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto text-center">

@@ -20,9 +20,9 @@ const HeroSection = () => {
         </div>
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#005f95] leading-tight mb-6">
-          Transforme seu LinkedIn em uma<br className="hidden md:block" />
-          Máquina de Vendas em<br className="hidden md:block" />
-          30 Dias ou Menos
+          Seu LinkedIn como Máquina<br className="hidden md:block" />
+          de Vendas e Reuniões<br className="hidden md:block" />
+          em 30 Dias ou Menos
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-8">

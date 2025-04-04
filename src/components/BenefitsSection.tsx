@@ -62,6 +62,17 @@ const BenefitsSection = () => {
             </div>
           ))}
         </div>
+        <div className="mt-12 text-center">
+          <Button 
+            className="cta-button"
+            onClick={() => {
+              const element = document.getElementById('cta');
+              if (element) element.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            Quero aplicar essa estratégia no meu perfil
+          </Button>
+        </div>
       </div>
     </section>
   );

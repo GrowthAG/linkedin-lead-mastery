@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button"; 
-import { TrendingUp, Lightbulb, Clock, Target, Zap, Users } from 'lucide-react';
+import { TrendingUp, Lightbulb, Clock, Target, Zap, Users, ArrowRight } from 'lucide-react';
 
 const benefits = [
   {
@@ -63,13 +63,15 @@ const BenefitsSection = () => {
             </div>
           ))}
         </div>
-        <Button 
-              className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-              onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
-            >
-              Quero Transformar Meu LinkedIn Agora
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+        <div className="mt-10 flex justify-center">
+          <Button 
+            className="w-full md:w-auto bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+          >
+            Quero Transformar Meu LinkedIn Agora
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </div>
       </div>
     </section>
   );

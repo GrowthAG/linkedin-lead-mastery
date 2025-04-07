@@ -65,7 +65,7 @@ const PLGSection = () => {
               className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
               onClick={scrollToPrice}
             >
-              Quero Acesso ao Treinamento + Todos os Bônus
+              Quero Acesso ao Treinamento
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             

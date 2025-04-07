@@ -42,6 +42,13 @@ const posts = [
 ];
 
 const RealResultsSection = () => {
+  const scrollToPrice = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="real-results" className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -108,13 +115,10 @@ const RealResultsSection = () => {
         
         <div className="mt-12 text-center">
           <Button 
-            className="cta-button"
-            onClick={() => {
-              const element = document.getElementById('cta');
-              if (element) element.scrollIntoView({ behavior: 'smooth' });
-            }}
+            className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-lg rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            onClick={scrollToPrice}
           >
-            Quero aplicar essa estratégia no meu perfil
+            Garantir minha vaga
           </Button>
         </div>
       </div>

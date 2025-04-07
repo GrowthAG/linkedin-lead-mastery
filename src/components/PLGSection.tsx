@@ -7,6 +7,14 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const PLGSection = () => {
   const isMobile = useIsMobile();
   
+  // Add scroll function for the pricing section
+  const scrollToPrice = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -55,9 +63,9 @@ const PLGSection = () => {
             
             <Button 
               className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-              onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+              onClick={scrollToPrice}
             >
-              Garantir Meu Acesso Agora
+              Quero Acesso ao Treinamento + Todos os Bônus
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             

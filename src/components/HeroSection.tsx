@@ -20,8 +20,8 @@ const HeroSection = () => {
         </div>
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#005f95] leading-tight mb-6">
-          Seu LinkedIn como Máquina<br className="hidden md:block" />
-          de Vendas e Reuniões<br className="hidden md:block" />
+          Seu LinkedIn como Máquina
+          de Vendas e Reuniões
           em 30 Dias ou Menos
         </h1>
         

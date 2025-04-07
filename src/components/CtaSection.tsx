@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift, Users } from 'lucide-react';
 
 const CtaSection = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white w-full overflow-x-hidden">
+    <section id="pricing" className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white w-full overflow-x-hidden">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-center mb-8">
           <div className="bg-red-500 px-4 py-1 rounded-full text-white text-sm font-bold">

@@ -12,6 +12,7 @@ import CreatorSection from '@/components/CreatorSection';
 import GuaranteeSection from '@/components/GuaranteeSection';
 import BonusSection from '@/components/BonusSection';
 import RealResultsSection from '@/components/RealResultsSection';
+import PricingCTA from '@/components/PricingCTA';
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
       <RealResultsSection />
       <TestimonialsSection />
       <GuaranteeSection />
+      <PricingCTA />
       <FaqSection />
       <CtaSection />
       <Footer />

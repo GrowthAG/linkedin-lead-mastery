@@ -188,6 +188,13 @@ const ModulesSection = () => {
   
   const grandTotal = modulesTotal + bonusesTotal;
   
+  const scrollToPrice = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <section id="modules" className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
@@ -286,10 +293,10 @@ const ModulesSection = () => {
           </div>
           
           <Button 
-            className="cta-button text-lg"
-            onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+            className="cta-button text-lg bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            onClick={scrollToPrice}
           >
-            Quero Acesso ao Treinamento + Todos os Bônus
+            Quero Acesso ao Treinamento
           </Button>
         </div>
       </div>

@@ -160,7 +160,6 @@ const bonuses = [
 ];
 
 const ModulesSection = () => {
-  // Calculate total value
   const modulesTotal = modules.reduce((total, module) => {
     const value = parseInt(module.value.replace(/\D/g, ''));
     return total + value;
@@ -174,10 +173,7 @@ const ModulesSection = () => {
   const grandTotal = modulesTotal + bonusesTotal;
   
   const scrollToPrice = () => {
-    const pricingSection = document.getElementById('pricing');
-    if (pricingSection) {
-      pricingSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = "https://pay.kiwify.com.br/9J0bQlb";
   };
   
   return (

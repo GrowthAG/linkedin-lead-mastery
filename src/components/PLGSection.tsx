@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart2, Zap, TrendingUp, CheckCircle, Users, Shield, Star } from 'lucide-react';
@@ -7,12 +6,8 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const PLGSection = () => {
   const isMobile = useIsMobile();
   
-  // Add scroll function for the pricing section
   const scrollToPrice = () => {
-    const pricingSection = document.getElementById('pricing');
-    if (pricingSection) {
-      pricingSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = "https://pay.kiwify.com.br/9J0bQlb";
   };
   
   return (

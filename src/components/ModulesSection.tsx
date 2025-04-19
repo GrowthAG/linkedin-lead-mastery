@@ -1,21 +1,7 @@
 import React from 'react';
 import { 
-  BookOpen, 
-  Layout, 
-  Edit, 
-  TrendingUp, 
-  MessageSquare, 
-  BarChart, 
-  Zap,
-  Gift,
-  FileText,
-  Monitor,
-  CheckCircle,
-  Calendar,
-  Users,
-  Target,
-  Award,
-  Clipboard
+  BookOpen, Layout, Edit, TrendingUp, MessageSquare, BarChart, Zap,
+  Gift, FileText, Monitor, CheckCircle, Calendar, Users, Target, Award, Clipboard
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   BookOpen, 
@@ -24,62 +23,62 @@ import { Card, CardContent } from "@/components/ui/card";
 const modules = [
   {
     number: 1,
-    title: "Hooks Matadores",
-    description: "Multiplique cliques e engajamentos com aberturas irresistíveis",
+    title: "Descobrindo seu nicho rentável",
+    description: "Módulo 1 – Aula 1: Identificação e validação do seu nicho de atuação",
     value: "R$297",
     icon: BookOpen,
     highlights: [
-      "Fórmula dos 3 segundos para capturar atenção instantaneamente",
-      "12 estruturas de hooks testadas e aprovadas em diferentes nichos",
-      "Técnica de curiosidade sequencial para reter leitores até o final"
+      "Identificação precisa do seu nicho de mercado",
+      "Validação do potencial de monetização",
+      "Posicionamento estratégico no LinkedIn"
     ]
   },
   {
     number: 2,
-    title: "Formatação que Converte",
-    description: "Estruture posts que hipnotizam leitores do início ao fim",
+    title: "Construindo sua persona profissional",
+    description: "Módulo 1 – Aula 2: Desenvolvimento da sua identidade profissional",
     value: "R$297",
     icon: Layout,
     highlights: [
-      "Técnicas de formatação visual cientificamente testadas para maior retenção",
-      "Padrões de espaçamento estratégico que aumentam leitura completa em 71%",
-      "Elementos visuais que geram 2.4x mais salvamentos e compartilhamentos"
+      "Criação da sua marca pessoal profissional",
+      "Definição do seu público-alvo ideal",
+      "Estratégias de diferenciação no mercado"
     ]
   },
   {
     number: 3,
-    title: "Criação de Conteúdo Infinito",
-    description: "Nunca mais fique sem ideias relevantes para seu público",
+    title: "Sistema \"Hub and Spoke\" para conteúdo integrado",
+    description: "Módulo 1 – Aula 3: Estruturação do seu sistema de conteúdo",
     value: "R$297",
     icon: Edit,
     highlights: [
-      "Sistema de criação rápida de conteúdo em apenas 30 minutos por dia",
-      "Método de reciclagem estratégica de conteúdo sem parecer repetitivo",
-      "25 fontes inesgotáveis de ideias específicas para seu nicho"
+      "Implementação do modelo Hub and Spoke",
+      "Integração de diferentes formatos de conteúdo",
+      "Maximização do alcance orgânico"
     ]
   },
   {
     number: 4,
-    title: 'A Fórmula "Forever 50"',
-    description: "Cresça mais rápido trabalhando menos horas por semana",
+    title: "Ideação sistemática",
+    description: "Módulo 1 – Aula 4: Sistema de geração contínua de ideias",
     value: "R$397",
     icon: TrendingUp,
     highlights: [
-      "Como alcançar 50% mais engajamento trabalhando 50% menos tempo",
-      "Plano semanal otimizado para máxima produtividade e resultados",
-      "Ferramentas de automação que diminuem 70% do tempo de produção"
+      "Processo estruturado de geração de ideias",
+      "Calendário editorial otimizado",
+      "Técnicas de brainstorming efetivo"
     ]
   },
   {
     number: 5,
-    title: "Comentários Estratégicos",
-    description: "Use comentários como arma secreta para multiplicar alcance",
+    title: "Processo de escrita otimizado",
+    description: "Módulo 1 – Aula 5: Framework de criação de conteúdo",
     value: "R$197",
     icon: MessageSquare,
     highlights: [
-      "Estratégia de 15 minutos diários para amplificar sua visibilidade",
-      "Técnica de comentários em cascata para aparecer no radar de decisores",
-      "Gatilhos de interação que transformam conexões em conversas de venda"
+      "Framework de escrita profissional",
+      "Técnicas de copywriting para LinkedIn",
+      "Otimização de tempo na produção de conteúdo"
     ]
   },
   {

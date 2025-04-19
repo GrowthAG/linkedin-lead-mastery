@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -19,10 +18,8 @@ const HeroSection = () => {
           <span>Metodologia comprovada por 2.500+ profissionais</span>
         </div>
         
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#005f95] leading-tight mb-6">
-          Seu LinkedIn como Máquina
-          de Vendas e Reuniões
-          em 30 Dias ou Menos
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#005f95] leading-tight mb-6 whitespace-pre-line">
+          {"Seu LinkedIn como\nMáquina de Vendas e\nReuniões em 30 Dias\nou Menos"}
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-8">

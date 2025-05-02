@@ -1,14 +1,10 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift, Users } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
-
 const CtaSection = () => {
   const isMobile = useIsMobile();
-  
-  return (
-    <section id="pricing" className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white w-full overflow-x-hidden">
+  return <section id="pricing" className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white w-full overflow-x-hidden">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-center mb-8">
           <div className="bg-red-500 px-4 py-1 rounded-full text-white text-sm font-bold">
@@ -30,21 +26,10 @@ const CtaSection = () => {
               <Gift className="mr-2 h-6 w-6" /> O que você recebe hoje:
             </h3>
             <div className="grid gap-4 text-left">
-              {[
-                "Acesso vitalício ao treinamento completo com 7 módulos (R$2.091)",
-                "Todos os 9 bônus exclusivos (valor de R$1.880)",
-                "Comunidade exclusiva de suporte por 12 meses",
-                "Atualizações gratuitas para sempre",
-                "Templates prontos para hooks, posts e carrosséis",
-                "Auditoria personalizada do seu perfil (20 primeiros inscritos)",
-                "Plano de ação de 90 dias personalizado",
-                "Garantia de resultados de 30 dias"
-              ].map((item, index) => (
-                <div key={index} className="flex items-center">
+              {["Acesso vitalício ao treinamento completo com 7 módulos (R$2.091)", "Todos os 9 bônus exclusivos (valor de R$1.880)", "Comunidade exclusiva de suporte por 12 meses", "Atualizações gratuitas para sempre", "Templates prontos para hooks, posts e carrosséis", "Auditoria personalizada do seu perfil (20 primeiros inscritos)", "Plano de ação de 90 dias personalizado", "Garantia de resultados de 30 dias"].map((item, index) => <div key={index} className="flex items-center">
                   <CheckCircle className="text-yellow-400 mr-3 h-5 w-5 flex-shrink-0" />
                   <span className="font-medium">{item}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <div className="mt-8 flex items-center justify-start bg-white/5 p-4 rounded-lg">
@@ -75,24 +60,17 @@ const CtaSection = () => {
               <p>Promoção válida por <span className="font-bold">apenas 24 horas</span> ou até esgotarem as 20 vagas para auditoria personalizada</p>
             </div>
             
-            <Button 
-              className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-6 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center h-auto"
-              onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"}
-            >
-              {isMobile ? (
-                <div className="flex items-center">
+            <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center h-auto px-[23px] py-[4px]">
+              {isMobile ? <div className="flex items-center">
                   <span className="text-center">
                     Quero Transformar<br />
                     Meu LinkedIn Agora
                   </span>
                   <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-                </div>
-              ) : (
-                <>
+                </div> : <>
                   <span>Quero Transformar Meu LinkedIn Agora</span>
                   <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-                </>
-              )}
+                </>}
             </Button>
           </div>
         </div>
@@ -103,24 +81,17 @@ const CtaSection = () => {
             Limitamos o número de vagas para garantir a qualidade do suporte e da comunidade.
             As últimas turmas esgotaram em menos de 24 horas.
           </p>
-          <Button 
-            className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-8 py-6 text-lg rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse flex items-center justify-center h-auto"
-            onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"}
-          >
-            {isMobile ? (
-              <div className="flex items-center">
+          <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse flex items-center justify-center h-auto py-[8px] text-base px-[26px]">
+            {isMobile ? <div className="flex items-center">
                 <span className="text-center">
                   Quero Transformar<br />
                   Meu LinkedIn Agora
                 </span>
                 <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-              </div>
-            ) : (
-              <>
+              </div> : <>
                 <span>Quero Transformar Meu LinkedIn Agora</span>
                 <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-              </>
-            )}
+              </>}
           </Button>
           
           <p className="mt-4 text-sm text-white/70">
@@ -128,8 +99,6 @@ const CtaSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CtaSection;

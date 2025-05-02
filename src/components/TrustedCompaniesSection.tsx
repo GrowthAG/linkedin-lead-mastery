@@ -9,7 +9,10 @@ import {
 
 const TrustedCompaniesSection = () => {
   const companies = [
-    
+    { name: "T", image: "/lovable-uploads/c6c88712-d10f-451d-880d-cbb1df094c9a.png" },
+    { name: "Datavoxx", image: "/lovable-uploads/b035ef9d-832a-4df1-bf95-751a950e1e92.png" },
+    { name: "Steel", image: "/lovable-uploads/6005457b-4fca-4277-bbe8-26d5e7597d40.png" },
+    { name: "Security First", image: "/lovable-uploads/d1df84ed-f656-4e73-a838-5b59df9bf90b.png" },
   ];
 
   const carouselRef = useRef<HTMLDivElement>(null);

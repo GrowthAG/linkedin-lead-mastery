@@ -127,10 +127,6 @@
   .responsive-heading {
     @apply text-xl md:text-2xl lg:text-3xl font-bold;
   }
-  
-  .logo-carousel {
-    @apply animate-slide;
-  }
 }
 
 /* Adicionando animações para elementos importantes */
@@ -145,20 +141,6 @@
 
 .animate-float {
   animation: float 5s ease-in-out infinite;
-}
-
-/* Animação de slide para o carrossel de logos */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100% / 2));
-  }
-}
-
-.animate-slide {
-  animation: slide 30s linear infinite;
 }
 
 /* Melhoria na animação do pulse-glow para mobile */

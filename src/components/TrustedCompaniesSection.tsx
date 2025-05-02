@@ -15,7 +15,6 @@ const TrustedCompaniesSection = () => {
     { name: "Steel", image: "/lovable-uploads/6005457b-4fca-4277-bbe8-26d5e7597d40.png" },
     { name: "Security First", image: "/lovable-uploads/d1df84ed-f656-4e73-a838-5b59df9bf90b.png" },
     { name: "PlacLux", image: "/lovable-uploads/468b3b1a-f554-449b-99b5-8e0e838937ae.png" },
-    { name: "UMB", image: "/lovable-uploads/6facb28f-fa0c-46ef-bc8c-5b0d25f1ba25.png" }
   ];
 
   const carouselRef = useRef<HTMLDivElement>(null);

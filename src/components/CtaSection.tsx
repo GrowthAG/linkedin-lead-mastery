@@ -1,8 +1,12 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift, Users } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const CtaSection = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <section id="pricing" className="py-16 px-4 bg-gradient-to-r from-[#005f95] to-[#004b76] text-white w-full overflow-x-hidden">
       <div className="max-w-5xl mx-auto">
@@ -75,7 +79,14 @@ const CtaSection = () => {
               className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
               onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"}
             >
-              Quero Transformar Meu LinkedIn Agora
+              {isMobile ? (
+                <>
+                  Quero Transformar<br />
+                  Meu LinkedIn Agora
+                </>
+              ) : (
+                "Quero Transformar Meu LinkedIn Agora"
+              )}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -91,7 +102,14 @@ const CtaSection = () => {
             className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-8 py-3 text-lg rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse"
             onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"}
           >
-            Quero Transformar Meu LinkedIn Agora
+            {isMobile ? (
+              <>
+                Quero Transformar<br />
+                Meu LinkedIn Agora
+              </>
+            ) : (
+              "Quero Transformar Meu LinkedIn Agora"
+            )}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           

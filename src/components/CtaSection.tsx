@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift, Users } from 'lucide-react';
@@ -81,18 +82,20 @@ const CtaSection = () => {
             Limitamos o número de vagas para garantir a qualidade do suporte e da comunidade.
             As últimas turmas esgotaram em menos de 24 horas.
           </p>
-          <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse flex items-center justify-center h-auto py-[8px] text-base px-[26px]">
-            {isMobile ? <div className="flex items-center">
-                <span className="text-center">
-                  Quero Transformar<br />
-                  Meu LinkedIn Agora
-                </span>
-                <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-              </div> : <>
-                <span>Quero Transformar Meu LinkedIn Agora</span>
-                <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-              </>}
-          </Button>
+          <div className="flex justify-center">
+            <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse flex items-center justify-center h-auto py-[8px] text-base px-[26px]">
+              {isMobile ? <div className="flex items-center">
+                  <span className="text-center">
+                    Quero Transformar<br />
+                    Meu LinkedIn Agora
+                  </span>
+                  <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                </div> : <>
+                  <span>Quero Transformar Meu LinkedIn Agora</span>
+                  <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                </>}
+            </Button>
+          </div>
           
           <p className="mt-4 text-sm text-white/70">
             Garanta sua vaga agora e comece a transformar seu LinkedIn hoje mesmo

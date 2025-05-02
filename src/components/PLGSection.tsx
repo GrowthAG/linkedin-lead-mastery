@@ -2,16 +2,12 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart2, Zap, TrendingUp, CheckCircle, Users, Shield, Star } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
-
 const PLGSection = () => {
   const isMobile = useIsMobile();
-  
   const scrollToPrice = () => {
     window.location.href = "https://pay.kiwify.com.br/9J0bQlb";
   };
-  
-  return (
-    <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
+  return <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
@@ -34,17 +30,10 @@ const PLGSection = () => {
             <h3 className="text-xl md:text-2xl font-bold mb-4 text-linkedin-primary">Acesso Premium ao Treinamento Completo</h3>
             
             <ul className="space-y-3 mb-6">
-              {[
-                "Domine as técnicas avançadas de hooks que geram alto engajamento",
-                "Acesso a todas as fórmulas exclusivas para crescer sua presença",
-                "Suporte dedicado para otimizar sua estratégia no LinkedIn",
-                "Garantia de resultado ou seu dinheiro de volta"
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start">
+              {["Domine as técnicas avançadas de hooks que geram alto engajamento", "Acesso a todas as fórmulas exclusivas para crescer sua presença", "Suporte dedicado para otimizar sua estratégia no LinkedIn", "Garantia de resultado ou seu dinheiro de volta"].map((item, idx) => <li key={idx} className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                   <span className={`${isMobile ? 'text-sm' : 'text-base'}`}>{item}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
             
             <div className="bg-gray-50 p-4 rounded-lg mb-6 border border-gray-100">
@@ -56,10 +45,7 @@ const PLGSection = () => {
               <div className="text-sm text-gray-500">ou 12x de R$97</div>
             </div>
             
-            <Button 
-              className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-              onClick={scrollToPrice}
-            >
+            <Button className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl" onClick={scrollToPrice}>
               Quero Acesso ao Treinamento
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -112,26 +98,8 @@ const PLGSection = () => {
           </div>
         </div>
         
-        <div className="bg-white border-l-4 border-blue-500 p-4 md:p-6 rounded-lg max-w-4xl mx-auto shadow-sm">
-          <div className="flex items-start md:items-center">
-            <div className="mr-4 flex-shrink-0">
-              <img 
-                src="https://i.pravatar.cc/60?img=8" 
-                alt="Cliente satisfeito" 
-                className="w-12 h-12 rounded-full border-2 border-blue-100"
-              />
-            </div>
-            <div>
-              <p className="text-blue-800 italic mb-2 text-sm md:text-base">
-                "Investi no LinkedIn Hackers Academy há 3 meses e já recuperei meu investimento 8x. Meu perfil é agora uma máquina de geração de leads qualificados, sem precisar fazer mais prospecção ativa."
-              </p>
-              <p className="font-semibold text-blue-900 text-sm md:text-base">— Ricardo M., Consultor de Marketing</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PLGSection;

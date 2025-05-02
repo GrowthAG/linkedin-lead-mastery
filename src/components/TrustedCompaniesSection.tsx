@@ -41,7 +41,7 @@ const TrustedCompaniesSection = () => {
 
     return () => clearInterval(autoplayInterval);
   }, []);
-  return <section className="py-16 px-4 bg-white">
+  return <section className="px-4 bg-white py-[80px]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">

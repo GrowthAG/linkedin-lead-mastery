@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart2, Zap, TrendingUp, CheckCircle, Users, Shield, Star } from 'lucide-react';
@@ -39,10 +40,10 @@ const PLGSection = () => {
             <div className="bg-gray-50 p-4 rounded-lg mb-6 border border-gray-100">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-gray-500 line-through text-sm">R$1.997</span>
-                <span className="bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded text-xs font-bold">50% OFF</span>
+                <span className="bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded text-xs font-bold">85% OFF</span>
               </div>
-              <div className="text-2xl font-bold text-linkedin-primary">R$997</div>
-              <div className="text-sm text-gray-500">ou 12x de R$97</div>
+              <div className="text-2xl font-bold text-linkedin-primary">R$297</div>
+              <div className="text-sm text-gray-500">ou 12x de R$29</div>
             </div>
             
             <Button className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-3 text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl" onClick={scrollToPrice}>

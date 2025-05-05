@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift, Users } from 'lucide-react';
@@ -13,7 +14,7 @@ const CtaSection = () => {
         </div>
         
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-center">
-          Receba R$3.971 em valor total<br className="hidden md:block" /> por apenas R$997
+          Receba R$3.971 em valor total<br className="hidden md:block" /> por apenas R$297
         </h2>
         
         <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto text-center">
@@ -46,8 +47,8 @@ const CtaSection = () => {
             <h3 className="text-2xl font-bold mb-2">Investimento único:</h3>
             <div className="mb-4">
               <div className="text-gray-500 line-through">De R$3.971</div>
-              <div className="text-3xl font-bold">Por R$997</div>
-              <div className="text-sm text-gray-600 mt-1">ou 12x de R$97</div>
+              <div className="text-3xl font-bold">Por R$297</div>
+              <div className="text-sm text-gray-600 mt-1">ou 12x de R$29</div>
             </div>
             
             <div className="flex items-center gap-2 text-sm mb-4 bg-green-50 p-3 rounded-lg border border-green-200">
@@ -71,7 +72,7 @@ const CtaSection = () => {
             As últimas turmas esgotaram em menos de 24 horas.
           </p>
           <div className="flex justify-center">
-            <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse flex items-center justify-center h-auto py-[8px] text-base px-[26px]">
+            <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse flex items-center justify-center h-auto py-6 text-base px-[26px]">
               {isMobile ? <div className="flex items-center">
                   <span className="text-center">
                     Quero Transformar<br />

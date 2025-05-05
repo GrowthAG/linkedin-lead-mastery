@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift, Users } from 'lucide-react';
@@ -61,18 +60,7 @@ const CtaSection = () => {
               <p>Promoção válida por <span className="font-bold">apenas 24 horas</span> ou até esgotarem as 20 vagas para auditoria personalizada</p>
             </div>
             
-            <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white text-base rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center h-auto px-[23px] py-[4px]">
-              {isMobile ? <div className="flex items-center">
-                  <span className="text-center">
-                    Quero Transformar<br />
-                    Meu LinkedIn Agora
-                  </span>
-                  <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-                </div> : <>
-                  <span>Quero Transformar Meu LinkedIn Agora</span>
-                  <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-                </>}
-            </Button>
+            
           </div>
         </div>
         

@@ -47,8 +47,8 @@ const CtaSection = () => {
             <h3 className="text-2xl font-bold mb-2">Investimento único:</h3>
             <div className="mb-4">
               <div className="text-gray-500 line-through">De R$3.971</div>
-              <div className="text-3xl font-bold">Por R$297</div>
-              <div className="text-sm text-gray-600 mt-1">ou 12x de R$29</div>
+              <div className="text-3xl font-bold">Por R$297 à vista</div>
+              <div className="text-sm text-gray-600 mt-1">ou 12x de R$29,90</div>
             </div>
             
             <div className="flex items-center gap-2 text-sm mb-4 bg-green-50 p-3 rounded-lg border border-green-200">

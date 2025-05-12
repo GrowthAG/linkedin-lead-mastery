@@ -18,6 +18,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToPrice = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navbarClass = `fixed top-0 left-0 right-0 z-50 ${
     scrolled ? 'bg-white shadow-md' : 'bg-white/90 backdrop-blur-sm'
   } border-b border-gray-200 py-3 px-4 md:px-8 transition-all duration-300 w-full`;
@@ -54,7 +61,7 @@ const Navbar = () => {
               <Button 
                 variant="default" 
                 className="bg-linkedin-primary hover:bg-linkedin-dark text-sm"
-                onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+                onClick={scrollToPrice}
               >
                 Inscreva-se agora
               </Button>
@@ -101,7 +108,7 @@ const Navbar = () => {
           <Button 
             variant="default" 
             className="bg-linkedin-primary hover:bg-linkedin-dark w-full mt-2 text-base"
-            onClick={() => window.location.href = "https://checkout.revhackers.academy/linkedin-hackers"}
+            onClick={scrollToPrice}
           >
             Inscreva-se agora
           </Button>

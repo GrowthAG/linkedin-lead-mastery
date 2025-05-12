@@ -193,7 +193,7 @@ const ModulesSection = () => {
               Você recebe <span className="text-linkedin-primary">R${grandTotal}</span> em valor total
             </h3>
             <p className="text-lg font-medium mt-2">
-              Mas hoje pode acessar por apenas <span className="text-linkedin-primary font-bold">R$297</span> ou 12x de R$29
+              Mas hoje pode acessar por apenas <span className="text-linkedin-primary font-bold">R$297 à vista</span> ou 12x de R$29,90
             </p>
           </div>
           

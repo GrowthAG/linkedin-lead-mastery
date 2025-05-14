@@ -12,7 +12,7 @@ const CtaSection = () => {
           </div>
         </div>
         
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-center">
+        <h2 className="text-5xl md:text-5xl font-extrabold mb-6 text-center">
           Receba R$3.971 em valor total<br className="hidden md:block" /> por apenas R$297
         </h2>
         

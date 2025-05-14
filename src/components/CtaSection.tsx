@@ -26,16 +26,26 @@ const CtaSection = () => {
             <h3 className="text-2xl font-bold mb-6 text-yellow-300 flex items-center">
               <Gift className="mr-2 h-6 w-6" /> O que você recebe hoje:
             </h3>
-            <div className="grid gap-4 text-left">
+            <div className="grid gap-4 text-left mb-8">
               {["Acesso vitalício ao treinamento completo com 7 módulos (R$2.091)", "Todos os 9 bônus exclusivos (valor de R$1.880)", "Comunidade exclusiva de suporte por 12 meses", "Atualizações gratuitas para sempre", "Templates prontos para hooks, posts e carrosséis", "Auditoria personalizada do seu perfil (20 primeiros inscritos)", "Plano de ação de 90 dias personalizado", "Garantia de resultados de 30 dias"].map((item, index) => <div key={index} className="flex items-center">
                   <CheckCircle className="text-yellow-400 mr-3 h-5 w-5 flex-shrink-0" />
                   <span className="font-medium">{item}</span>
                 </div>)}
             </div>
             
-            <div className="mt-8 flex items-center justify-start bg-white/5 p-4 rounded-lg">
-              <Users className="text-yellow-400 mr-3 h-5 w-5" />
-              <p className="text-sm text-white/80">Mais de <span className="font-bold text-white">2.500 alunos</span> já transformaram seu LinkedIn com nosso método</p>
+            <div className="flex justify-center">
+              <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse flex items-center justify-center h-auto py-6 text-base px-[26px]">
+                {isMobile ? <div className="flex items-center">
+                    <span className="text-center">
+                      Quero Transformar<br />
+                      Meu LinkedIn Agora
+                    </span>
+                    <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                  </div> : <>
+                    <span>Quero Transformar Meu LinkedIn Agora</span>
+                    <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                  </>}
+              </Button>
             </div>
           </div>
           
@@ -63,32 +73,6 @@ const CtaSection = () => {
             
             
           </div>
-        </div>
-        
-        <div className="bg-white/10 p-6 rounded-lg max-w-3xl mx-auto text-center">
-          <h4 className="font-bold mb-4 text-yellow-300">ÚLTIMAS VAGAS DISPONÍVEIS</h4>
-          <p className="text-white/90 mb-6">
-            Limitamos o número de vagas para garantir a qualidade do suporte e da comunidade.
-            As últimas turmas esgotaram em menos de 24 horas.
-          </p>
-          <div className="flex justify-center">
-            <Button onClick={() => window.location.href = "https://pay.kiwify.com.br/9J0bQlb"} className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white rounded-md font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pulse flex items-center justify-center h-auto py-6 text-base px-[26px]">
-              {isMobile ? <div className="flex items-center">
-                  <span className="text-center">
-                    Quero Transformar<br />
-                    Meu LinkedIn Agora
-                  </span>
-                  <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-                </div> : <>
-                  <span>Quero Transformar Meu LinkedIn Agora</span>
-                  <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
-                </>}
-            </Button>
-          </div>
-          
-          <p className="mt-4 text-sm text-white/70">
-            Garanta sua vaga agora e comece a transformar seu LinkedIn hoje mesmo
-          </p>
         </div>
       </div>
     </section>;

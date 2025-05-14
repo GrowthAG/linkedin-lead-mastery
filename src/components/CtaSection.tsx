@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, ShieldCheck, Clock, Gift, Users } from 'lucide-react';
@@ -17,9 +16,7 @@ const CtaSection = () => {
           Receba R$3.971 em valor total<br className="hidden md:block" /> por apenas R$297
         </h2>
         
-        <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto text-center">
-          Junte-se a mais de <span className="underline decoration-yellow-400">2.500 profissionais</span> que já transformaram sua presença no LinkedIn com nosso método comprovado.
-        </p>
+        
         
         <div className="flex flex-col md:flex-row gap-8 mb-12">
           <div className="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-xl md:w-2/3 w-full">
